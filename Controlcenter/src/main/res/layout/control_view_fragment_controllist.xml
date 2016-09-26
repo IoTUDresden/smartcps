@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/map_view_context"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/list_background_grey">
+	
+    <!-- Header for Context Menu -->
+    <RelativeLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:paddingTop="13dp"
+		android:paddingBottom="10dp"
+		android:background="@color/background_dark_grey">
+		    
+		    
+	  <ImageButton
+		        android:id="@+id/collapse_controls_button"
+		        android:layout_width="40dp"
+		        android:layout_height="40dp"
+				android:layout_marginLeft="20dp"
+		        android:src="@drawable/ic_collapse"
+		        android:background="@null"
+		        android:contentDescription="@string/item_list_collapse"
+		        android:scaleType="fitCenter"
+		        android:adjustViewBounds="true"/>
+		    
+		    <TextView
+		        android:text="@string/title_list_controls"
+		        android:layout_width="wrap_content"
+		    	android:layout_height="40dp"
+		    	android:layout_marginLeft="20dp"
+				android:textSize="20sp"
+				android:gravity="center"
+				android:layout_toRightOf="@id/collapse_controls_button"
+				android:textColor="@color/text_bright">
+		    </TextView> 
+		    
+	</RelativeLayout>
+    
+    <!-- The List of Controls -->
+    <LinearLayout
+        android:id="@+id/control_list"
+	    android:layout_width="match_parent"
+    	android:layout_height="60dp"
+    	android:visibility="visible"
+    	android:orientation="vertical"> 
+	</LinearLayout>
+	
+    <!-- The Battery State-->
+   <!--  <RelativeLayout
+	    android:layout_width="wrap_content"
+	    android:layout_height="60dp">
+		
+	   <ImageView
+	        android:id="@+id/battery_icon"
+	        android:layout_width="40dp"
+	        android:layout_height="40dp"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginTop="10dp"
+	        android:contentDescription="@string/robot_list_item_icon"
+	        android:src="@drawable/ic_poi_loadingstation_dark" >
+	    </ImageView>
+	
+	    <TextView
+	        android:id="@+id/text_battery_state"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="20dp"
+	        android:layout_marginLeft="10dp"
+	        android:layout_toRightOf="@+id/battery_icon"
+	        android:text="@string/title_touchcontrol"
+	        android:textColor="@color/list_item_text_grey"
+	        android:textSize="20sp" />
+
+	</RelativeLayout>
+  --> 
+</LinearLayout> 

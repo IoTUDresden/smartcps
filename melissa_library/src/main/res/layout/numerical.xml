@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/wrapper"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/ValueCurrentTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:text="18."
+                android:textSize="40dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|top"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/ValueCurrentUnitTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|bottom"
+                    android:layout_weight="28"
+                    android:text="°C"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/ValueCurrentDecimalPlacesTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:text="1"
+                    android:textSize="16dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2px"
+            android:background="#FF909090" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/ValueMinTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="18."
+                android:textSize="30dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/ValueMinUnitTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="°C"
+                    android:textColor="@color/bluegrass"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/ValueMinDecimalPlacesTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="11sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/ValueMaxTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="21."
+                android:textSize="30sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/ValueMaxUnitTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="°C"
+                    android:textColor="#ff2416"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/ValueMaxDecimalPlacesTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:textSize="11sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</merge>

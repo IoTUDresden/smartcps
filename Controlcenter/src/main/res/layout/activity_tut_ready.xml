@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/tutReady_relativeLayoutRoot"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:paddingLeft="@dimen/paddingNormal"
+	android:paddingRight="@dimen/paddingNormal">
+
+	<RelativeLayout
+		android:id="@+id/tutReady_relativeLayout"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerHorizontal="true"
+		android:layout_marginTop="@dimen/marginNormal">
+
+		<ImageView
+			android:id="@+id/tutReady_ivLargeLogo"
+			android:layout_width="@dimen/welcomeLogoWidth"
+			android:layout_height="@dimen/welcomeLogoWidth"
+			android:layout_alignParentTop="true"
+			android:src="@drawable/tutorial_large_logo"
+			android:contentDescription="@string/descriptionLogo"/>
+
+		<TextView
+			android:id="@+id/tutReady_txtHeadline"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerVertical="true"
+			android:layout_marginLeft="10dp"
+			android:layout_toRightOf="@id/tutReady_ivLargeLogo"
+			android:text="@string/tutReady_txtHeadline"
+			android:textSize="@dimen/tutWelcome_Headline"/>
+	</RelativeLayout>
+
+	<TextView
+		android:id="@+id/tutReady_txtNormal1"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/tutReady_relativeLayout"
+		android:layout_marginTop="@dimen/marginNormal"
+		android:gravity="center_horizontal"
+		android:text="@string/tutReady_txtNormal1"
+		android:textSize="@dimen/tsNormal"/>
+
+	<include
+		android:id="@+id/btnNext"
+		layout="@layout/_btn_finish"/>
+
+</RelativeLayout>

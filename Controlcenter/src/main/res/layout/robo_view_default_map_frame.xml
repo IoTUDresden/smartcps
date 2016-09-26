@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+ 
+ <!-- default container which tells the user to add a map -->
+ <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+       android:id="@+id/default_map_view"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:background="@drawable/pic_map_intro"
+       android:layout_gravity="center"
+       android:paddingTop="150dp"
+       android:paddingLeft="200dp"
+       android:layout_marginTop="20dp"
+       android:layout_marginBottom="20dp">
+       
+ 	   <ImageView
+	        android:id="@+id/map_info_icon"
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	        android:contentDescription="@string/intro_info_icon"
+	        android:src="@drawable/ic_info"
+	        android:layout_marginLeft="85dp"/>
+	 	   		
+		<TextView
+	        android:text="@string/navigation_intro"
+	        android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:layout_marginTop="10dp"
+			android:textSize="30sp"
+			android:gravity="center"
+			android:textColor="@color/text_bright"/>
+		
+</LinearLayout>

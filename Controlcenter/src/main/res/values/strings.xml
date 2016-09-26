@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- General terms -->
+    <string name="appName">smartCPS</string>
+    <string name="menuSettings">Settings</string>
+    <string name="menuHelp">Help</string>
+    <string name="menuFloor">Floor View</string>
+    <string name="menuProcess">Process Library</string>
+    <string name="menuAppdashboard">Apps</string>
+    <string name="btnNext">Next »</string>
+    <string name="btnFinish">Finish</string>
+    <string name="btnOk">OK</string>
+    <string name="btnYes">Yes</string>
+    <string name="btnNo">No</string>
+    <string name="btnClose">Close</string>
+    <string name="descriptionLogo">Logo</string>
+    <string name="executeService">Run service</string>
+    <string name="noDevices">There are no devices registered at the moment. Add new devices via settings.</string>
+    <string name="noDevices_Children">No devices here yet. You can add devices, if you go to settings > add devices.</string>
+    <string name="currentStep">Step %1$s of %2$s</string>
+    <string name="choose">Choose</string>
+    <string name="notImplementedYet">Not implemented yet.</string>
+    <string name="seqButton_send">Load Model</string>
+
+    <!-- Help -->
+    <string name="help_reminderToast">Got lost? Access the help in the upper right area.&lt;br />&lt;br />Longtap this message to dismiss it permanently.&lt;br />Tap this message for a short amount of time to hidei it.</string>
+    <string name="help_reminderToast_Children">Are you lost and need help? Access the help in the upper right area.&lt;br />&lt;br />Longtap here to dismiss the message for ever.&lt;br />Tap here to hide this message.</string>
+    <string name="help_reminderStopDisplaying">Would you like to discard the help function?</string>
+    <string name="help_reminderStopDisplaying_Children">You dont like the help messages no more?</string>
+    <string name="help_start_txtHeadline">Need help? We\'ll find a solution.</string>
+    <string name="help_start_txtNormal1">Welcome to smartCPS help. Choose a topic that fits your interest.</string>
+    <string name="help_whatIsSmartCPS_txtHeadline">What is smartCPS?</string>
+    <string name="help_whatIsSmartCPS_contentHtml">smartCPS is a &lt;a href=\"smartcps://Software\">software&lt;/a>, you can access with your &lt;a href=\"smartcps://Tablet\">tablet&lt;/a> or &lt;a href=\"smartcps://Smartphone\">phone&lt;/a> to manage your devices at home. The app also dynamically adapts:&lt;br/>&lt;br/>Are you experienced when it comes to software like this or do you need help from time to time? If a disability TODO..</string>
+    <string name="help_whatIsSmartCPS_contentHtml_Children">smartCPS is a &lt;a href=\"smartcps://Software\">software&lt;/a>, which you can acess with a &lt;a href=\"smartcps://Tablet\">tablet&lt;/a> or &lt;a href=\"smartcps://Smartphone\">phone&lt;/a> to manage your devices. If you have any disabilities smartCPS will help you..</string>
+    <string name="help_whatIsSwiping_txtHeadline">What does \"swipe over the display\" mean?</string>
+    <string name="help_whatIsSwiping_contentHtml">Im besten Wortsinn bedeutet "Wischen" (englisch auch \"swiping\") das Aufsetzen Ihres Fingers auf dem &lt;a href=\"smartcps://Touchscreen\">Touchscreen&lt;/a> und das anschließende Bewegen des aufgesetzten Fingers in eine beliebige Richtung. Es handelt sich also um eine Geste des Fingers.</string>
+    <string name="help_whatIsSwiping_contentHtml_Children">Im besten Wortsinn bedeutet "Wischen" (englisch auch \"swiping\") das Aufsetzen deines Fingers auf dem &lt;a href=\"smartcps://Touchscreen\">Touchscreen&lt;/a> und das anschließende Bewegen des aufgesetzten Fingers in irgendeine Richtung. Es handelt sich also um eine Geste des Fingers.</string>
+    <string name="help_whatIsLongClick_txtHeadline">Was bedeutet \"gedrückt halten\"?</string>
+    <string name="help_whatIsLongClick_contentHtml">Wenn ein Finger auf den &lt;a href=\"smartcps://Touchscreen\">Touchscreen&lt;/a> gelegt wird und dort verbleibt, also nicht wieder abgehoben wird (das wäre ein normales Antippen), spricht man vom \"gedrückt halten \".&lt;br />&lt;br />Sie können auch mehrere Finger &lt;strong>gleichzeitig&lt;/strong> gedrückt halten.</string>
+    <string name="help_whatIsLongClick_contentHtml_Children">Wenn ein Finger auf den &lt;a href=\"smartcps://Touchscreen\">Touchscreen&lt;/a> gelegt wird und dort auch bleibt, also nicht wieder abgehoben wird (das wäre ein normales Antippen), spricht man vom \"gedrückt halten \".&lt;br />&lt;br />Du kannst auch mehrere Finger &lt;strong>gleichzeitig&lt;/strong> gedrückt halten.</string>
+    <string name="help_howToProceed_txtHeadline">Wie komme ich zum nächsten Schritt?</string>
+    <string name="help_howToProceed_contentHtml">Tippen Sie entweder auf die Schaltfläche \"Weiter\" am unteren rechten Bildschirmrand oder wischen Sie schnell von rechts nach links über den Bildschirm.</string>
+    <string name="help_howToProceed_contentHtml_Children">Tippe entweder auf die Schaltfläche \"Weiter\" am unteren rechten Bildschirmrand oder wische schnell von rechts nach links über den Bildschirm.</string>
+    <string name="help_howToReturn_txtHeadline">Wie kehre ich zum letzten Schritt zurück?</string>
+    <string name="help_howToReturn_contentHtml">Tippen Sie entweder auf die \"Zurück\"-Schaltfläche am unteren linken Bildschirmrand oder wischen Sie schnell von links nach rechts über den Bildschirm.</string>
+    <string name="help_howToReturn_contentHtml_Children">Tippe entweder auf die \"Zurück\"-Schaltfläche am unteren linken Bildschirmrand oder wische schnell von links nach rechts über den Bildschirm.</string>
+    <string name="help_howDoesTheReelMenuWork_txtHeadline">Wie funktioniert ein Reel-Menü?</string>
+    <string name="help_howDoesTheReelMenuWork_contentHtml">Eine ausführliche Einführung zum Reel-Menü können Sie zu jeder Zeit über&lt;br />\"Einstellungen -> Einführung\" erhalten. Die \"Einstellungen\"-Schaltfläche finden Sie am oberen rechten Bildschirmrand.</string>
+    <string name="help_howDoesTheReelMenuWork_contentHtml_Children">Eine ausführliche Einführung zum Reel-Menü kannst du zu jeder Zeit über&lt;br />\"Einstellungen -> Einführung\" erhalten. Die \"Einstellungen\"-Schaltfläche findest du am oberen rechten Bildschirmrand.</string>
+    <string name="help_howDoIControlADevice_txtHeadline">Wie steuere ich ein Gerät?</string>
+    <string name="help_howDoIControlADevice_contentHtml">Halten Sie einfach Ihren Finger auf einem Gerät gedrückt, dann öffnet sich ein Menü, mit dem Sie das Gerät steuern können.</string>
+    <string name="help_howDoIControlADevice_contentHtml_Children">Halte einfach deinen Finger auf einem Gerät gedrückt, dann öffnet sich ein Menü, mit dem du das Gerät steuern kannst.</string>
+    <string name="help_howDoIMoveADevice_txtHeadline">Wie verschiebe ich ein Gerät?</string>
+    <string name="help_howDoIMoveADevice_contentHtml">Halten Sie zwei Finger auf einem Gerät gedrückt. Nach einem kurzen Moment können sie es dann verschieben.</string>
+    <string name="help_howDoIMoveADevice_contentHtml_Children">Halte zwei Finger auf einem Gerät gedrückt. Nach einem kurzen Moment kannst du es dann verschieben.</string>
+
+    <!-- Tutorial (Welcome) -->
+    <string name="tutWelcome_txtHeadline">Herzlich willkommen.</string>
+    <string name="tutWelcome_txtNormal1">&lt;b>Bitte hören Sie nicht auf, zu lesen!&lt;/b> Bevor Sie loslegen können, sollten Sie sich mit der Bedienung von smartCPS vertraut machen.</string>
+    <string name="tutWelcome_txtNormal2">Um fortzufahren, tippen Sie auf &lt;b>\"Weiter\"&lt;/b> oder &lt;b>wischen Sie schnell von rechts nach links&lt;/b> über den Bildschirm. Falls Sie &lt;b>Hilfe&lt;/b> beim aktuellen Dialogschritt benötigen, tippen Sie auf das &lt;b>Hilfe-Symbol am oberen rechten Bildschirmrand&lt;/b> oder &lt;b>zeichnen Sie mit Ihrem Finger einen Kreis&lt;/b> auf den Bildschirm.</string>
+
+    <!-- Tutorial (User Evaluation) -->
+    <string name="tutEvaluation_txtNormal1">Damit sich smartCPS an Ihre persönlichen Eigenschaften und Präferenzen anpassen kann, werden einige Daten zu Ihrer Person benötigt:</string>
+
+    <!-- Age -->
+    <string name="tutEvaluation_txtAge">Wie alt sind Sie?</string>
+
+    <!-- Technical skills -->
+    <string name="tutEvaluation_txtTechnicalSkills">Sind Sie geübt im Umgang mit Technik im Allgemeinen und Smartphones/Tablets im Besonderen? Würden Sie sich als eher technisch versiert bezeichnen?</string>
+
+    <string-array name="tutEvaluation_spnTechnicalSkillsChoices">
+        <item>Eher wenig technisch versiert</item>
+        <item>Eher technisch versiert</item>
+    </string-array>
+
+    <!-- Handicaps -->
+    <string name="tutEvaluation_txtHandicaps">Sind Sie in einer der folgenden Arten eingeschränkt?</string>
+    <string name="tutEvaluation_tglHandicapsMemory">Gedächtnis</string>
+    <string name="tutEvaluation_tglHandicapsSight">Sehvermögen</string>
+    <string name="tutEvaluation_tglHandicapsMotorSkills">Motorik</string>
+
+    <!-- Tutorial (Change Theme) -->
+    <string name="tutChangeTheme_txtNormal1">smartCPS bietet Ihnen zwei Farbschemata (Themes) an. Bitte wählen Sie eines aus und bestätigen mit \"Weiter\".</string>
+    <string name="tutChangeTheme_txtNormal1_Children">Du kannst smartCPS in zwei Farben anzeigen. Bitte wählen eine aus und bestätige mit \"Weiter\".</string>
+    <string name="tutChangeTheme_tglLight">Helles Farbschema</string>
+    <string name="tutChangeTheme_tglDark">Dunkles Farbschema</string>
+
+    <!-- Tutorial (Control) -->
+    <string name="tutControl_txtNormal1">In diesem Schritt erfahren Sie, wie Sie mit smartCPS Ihre Geräte steuern können:</string>
+    <string name="tutControl_txtNormal1_Children">Wie man mit smartCPS Geräte steuert? Hier erfährst du es!</string>
+    <string name="tutControl_txtStep1">Jedes Ihrer &lt;b>Geräte&lt;/b> wird durch eine solche Box dargestellt. Ein Gerät hat dabei verschiedene &lt;b>Zustände&lt;/b> (z.B. \"Eingeschaltet\" oder \"Stumm\""), die Sie durch die Ausführung von &lt;b>Diensten&lt;/b> steuern können. Der letzte von Ihnen ausgeführte Dienst erscheint in der &lt;b>letzten Zeile&lt;/b> der Box.&lt;br/>&lt;br/>Wischen Sie auf der Grafik von rechts nach links, um zum nächsten Schritt zu gelangen.</string>
+    <string name="tutControl_txtStep1_Children">Jedes der &lt;b>Geräte&lt;/b> wird durch eine solche Box dargestellt. Ein Gerät hat dabei verschiedene &lt;b>Zustände&lt;/b> (z.B. \"Eingeschaltet\" oder \"Stumm\""), die du durch die Ausführung von &lt;b>Diensten&lt;/b> steuern kannst. Der letzte von dir ausgeführte Dienst erscheint in der &lt;b>letzten Zeile&lt;/b> der Box.&lt;br/>&lt;br/>Wische auf der Grafik von rechts nach links, um zum nächsten Schritt zu gelangen.</string>
+    <string name="tutControl_txtStep2">&lt;b>Halten&lt;/b> Sie den Finger auf einem solchen Gerät &lt;b>gedrückt&lt;/b>, öffnet sich ein &lt;b>Menü&lt;/b>, über das Sie alle verfügbaren Dienste ausführen können.</string>
+    <string name="tutControl_txtStep2_Children">&lt;b>Hältst&lt;/b> du den Finger auf einem Gerät &lt;b>gedrückt&lt;/b>, öffnet sich ein &lt;b>Menü&lt;/b>, über das du alle verfügbaren Dienste ausführen kannst (z.B. den Fernseher einschalten).</string>
+    <string name="tutControl_txtStep3">Halten Sie &lt;b>zwei Finger gleichzeitig&lt;/b> auf einem Gerät gedrückt, können Sie es anschließend &lt;b>verschieben&lt;/b>. So können Sie sich Ihre Geräte anordnen, wie Sie möchten.</string>
+    <string name="tutControl_txtStep3_Children">Hältst du &lt;b>zwei Finger gleichzeitig&lt;/b> auf einem Gerät gedrückt, kannst du es anschließend &lt;b>verschieben&lt;/b>. So kannst du dir deine Geräte anordnen, wie du möchtest.</string>
+    <string name="tutControl_hint">Sie haben noch nicht alle Schritte der Einführung zur Bedienung Ihrer Geräte gelesen. Wischen Sie von rechts nach links über die Grafik, um zur nächsten zu gelangen.\nUm trotzdem fortzufahren, tippen Sie auf \"Weiter\".</string>
+    <string name="tutControl_hint_Children">Du hast noch nicht alle Schritte der Einführung zur Bedienung der Geräte gelesen. Wische von rechts nach links über die Grafik, um zur nächsten zu gelangen.\nFalls du diese Einführung nicht brauchst, tippe einfach auf \"Weiter\".</string>
+
+    <!-- Tutorial (Ready) -->
+    <string name="tutReady_txtHeadline">Los geht\'s!</string>
+    <string name="tutReady_txtNormal1">Sie haben die Einführung abgeschlossen und können nun Ihre ersten Geräte steuern!&lt;br/>&lt;br/>Auf Grund Ihrer Eingaben wurden einige Anpassungen an smartCPS vorgenommen. Sie können diese Anpassungen &lt;b>jederzeit in den Einstellungen widerrufen&lt;/b>!</string>
+    <string name="tutReady_txtNormal1_Children">Du hast gerade die Einführung abgeschlossen!&lt;br/>&lt;br/>Entsprechend der Angaben, die du während dieser Einführung gemacht hast, wurden einige Anpassungen an smartCPS vorgenommen. Du kannst diese Anpassungen &lt;b>jederzeit in den Einstellungen ändern&lt;/b>!</string>
+
+    <!-- New Devices -->
+    <string name="addNewDevices_txtNormal1">Es wurden &lt;b>neue Geräte gefunden&lt;/b>. Möchten Sie sie zu smartCPS hinzufügen?&lt;br/>Sie können dies auch später über die &lt;b>Einstellungen&lt;/b> nachholen.</string>
+    <string name="addNewDevices_txtNormal1_Children">Es wurden neue Geräte gefunden. Möchtest du sie zu smartCPS hinzufügen?&lt;br/>Das kannst du auch später über die &lt;b>Einstellungen&lt;/b> nachholen!</string>
+    <string name="addNewDevices_btnAddAll">Alle Geräte hinzufügen</string>
+    <string name="addNewDevices_btnAddSome">Geräte auswählen</string>
+    <string name="addNewDevices_btnAddNone">Keine Geräte hinzufügen</string>
+
+    <!-- Home -->
+    <string name="home_txtWheather">8°C, bewölkt</string>
+    <string name="home_txtLocation">Dresden</string>
+    <string name="home_btnControlApps">Apps</string>
+    <string name="home_btnControlFloor">Grundriss</string>
+    <string name="home_txtActiveDevices">Main Menu</string>
+
+    <!-- Add New Service -->
+    <string name="addNewService_txtNormal1">Bitte geben Sie die untenstehenden Informationen ein, damit der neue Dienst hinzugefügt werden kann.</string>
+    <string name="addNewService_txtNormal1_Children">Bitte fülle die unteren Felder aus, damit der neue Dienst hinzugefügt werden kann.</string>
+    <string name="addNewService_btnAdd">Hinzufügen</string>
+    <string name="addNewService_stepDescription1">Der &lt;b>Dienstname&lt;/b> (z. B. \"Einschalten\" oder \"Lauter\") bezeichnet den Dienst, den Sie gerade hinzufügen. Markieren Sie den Dienst als &lt;b>Favoriten&lt;/b>, wenn Sie möchten, dass er im Menü zur Gerätesteuerung weiter oben steht.</string>
+    <string name="addNewService_stepDescription1_Children">Der &lt;b>Dienstname&lt;/b> (z. B. \"Einschalten\" oder \"Lauter\") ist die Bezeichnung des Dienstes, den du gerade hinzufügst. Wenn du den Dienst als &lt;b>Favoriten&lt;/b> markierst, steht er im Menü zur Gerätesteuerung weiter oben.</string>
+    <string name="addNewService_txtName">Dienstname:</string>
+    <string name="addNewService_txtFavorite">Favorit?</string>
+    <string name="addNewService_stepDescription2">Wählen Sie zunächst das &lt;b>Gerät&lt;/b> aus, dessen Zustand Sie mit dem Dienst verändern möchten. Das ist normalerweise das Gerät, dem der Dienst zugewiesen wird.&lt;br />&lt;br />Der &lt;b>Effekt&lt;/b> tritt ein, wenn der Dienst, den Sie gerade erstellen, ausgeführt wird. Normalerweise wird durch einen Dienst der Zustand eines Geräts verändert. So kann bspw. ein Fernseher auf "Aus" gestellt werden.</string>
+    <string name="addNewService_stepDescription2_Children">Wähle erst das &lt;b>Gerät&lt;/b> aus, dessen Zustand du mit dem Dienst verändern möchtest. Das ist normalerweise das Gerät, dem der Dienst zugewiesen wird.&lt;br />&lt;br />Der &lt;b>Effekt&lt;/b> tritt ein, wenn der Dienst, den du gerade erstellst, ausgeführt wird. Normalerweise wird durch einen Dienst der Zustand eines Geräts verändert. So kann bspw. ein Fernseher auf "Aus" gestellt werden.</string>
+
+    <!-- TOOD change all upwards -->
+
+    <string name="addNewService_txtDevice">device:</string>
+    <string name="addNewService_rlmDeviceGroupName">devices</string>
+
+    <string-array name="addNewService_spnDeviceChoices">
+        <item>television</item>
+        <item>freezer</item>
+        <item>lamp</item>
+        <item>computer</item>
+        <item>clock</item>
+        <item>oven</item>
+    </string-array>
+
+    <string name="addNewService_txtEffect">effect:</string>
+    <string name="addNewService_rlmEffectGroupName">effects</string>
+
+    <string-array name="addNewService_spnEffectChoices">
+        <item>Gerätezustand ändern</item>
+        <item>Sinnvoller Effekt1</item>
+        <item>Sinnvoller Effekt2</item>
+        <item>Sinnvoller Effekt3</item>
+        <item>Sinnvoller Effekt4</item>
+        <item>Sinnvoller Effekt5</item>
+    </string-array>
+
+    <string name="addNewService_stepDescription3">Choose a &lt;b>device status&lt;/b> that shall be changed. Also, please choose a new &lt;b>value&lt;/b> to be set..</string>
+    <string name="addNewService_stepDescription3_Children">Choose a &lt;b>device status&lt;/b> you want to change. Afterwards, choose a new &lt;b>value&lt;/b>.</string>
+    <string name="addNewService_txtState">device status:</string>
+    <string name="addNewService_rlmStateGroupName">device status</string>
+
+    <string-array name="addNewService_spnStateChoices">
+        <item>On/Off</item>
+        <item>station</item>
+        <item>volume</item>
+        <item>tele text site</item>
+        <item>input</item>
+        <item>output</item>
+    </string-array>
+
+    <string name="addNewService_txtStateValue">Value:</string>
+    <string name="addNewService_rlmStateValueGroupName">values</string>
+
+    <string-array name="addNewService_spnStateValueChoices">
+        <item>On</item>
+        <item>Off</item>
+        <item>Das Erste</item>
+        <item>ZDF</item>
+        <item>phoenix</item>
+        <item>ZDFneo</item>
+    </string-array>
+    
+    <!-- Dashboard Device -->
+    <string name="deviceOption_can_rename">Rename</string>
+    <string name="deviceOption_can_change_room">Change Room</string>
+    <string name="deviceOption_can_change_vis">Change Visualization</string>
+    <string name="deviceOption_can_change_min_max">Change Ideal values</string>
+    <string name="deviceOption_can_hide">Hide</string>   
+
+    <!-- Device Details -->
+    <string name="deviceDetail_activity_name">Details of </string>
+    <string name="deviceDetail_deviceName">Name</string>
+    <string name="deviceDetail_deviceLocation">Location</string>
+    <string name="deviceDetail_deviceMaxValue">Maximum Value</string>
+    <string name="deviceDetail_deviceMinValue">Minimum Value</string>
+    <string name="deviceDetail_deviceIdealMin">Ideal Minimum</string>
+    <string name="deviceDetail_deviceIdealMax">Ideal Maximum</string>
+    
+    <string name="deviceDetail_activityName">Device management</string>
+    <string name="deviceDetail_deviceState">Device status</string>
+    <string name="deviceDetail_deviceSwitch">On/Off</string>
+    <string name="deviceDetail_deviceNameSmall">Device name:</string>
+    <string name="deviceDetail_deviceExtendedName">Extended name:</string>
+
+    <!-- Dashboard -->
+    <string name="dashboard_filter_exceededBoundaryValues">Ideal Values exceeded</string>
+    <string name="dashboard_filter_filter">Filter</string>
+    <string name="dashboard_filter">Apply</string>
+    <string name="dashboard_filter_remove">Remove</string>
+    <string name="dashboard_filter_cancel">Cancel</string>
+    
+    <string name="dashboard_options_title">"Options for "</string>
+    <string name="dashboard_options_change">Change</string>
+    <string name="dashboard_options_min_must_be_number">Minimum must be a number</string>
+    <string name="dashboard_options_max_must_be_number">Maximum must be a number</string>
+    <string name="dashboard_options_min_must_be_lower">Minimum must be lower than the Maximum</string>
+    <string name="dashboard_options_enter_name">Enter a new name</string>
+    
+    <string name="dashboard_rename_of">"Rename "</string>
+    <string name="dashboard_ok">OK </string>    
+    <string name="dashboard_change_vis_of">"Change Visualization of "</string>
+    <string name="dashboard_change_room_of">"Change Room of "</string>
+    <string name="dashboard_type_in_room">"Please type in a room "</string>
+    <string name="dashboard_change_ideal_values_of">"Change Ideal Values of "</string>
+
+    <!-- Sort ActionBar Utility -->
+    <string name="action_sort_menuGroupName">Sortieren</string>
+    <string name="action_sort_by_name">nach Name</string>
+    <string name="action_sort_by_type">nach Typ</string>
+    <string name="action_sort_by_room">nach Raum</string>
+    <string name="action_sort_by_none">aufheben</string>
+
+    <!-- Filter ActionBar Utility -->
+    <string name="action_filter_menuGroupName">Filter</string>
+    <string name="action_filter_menuGroupServicesName">Connection</string>
+    <string name="action_filter_sortTemp">temperature sensors</string>
+    <string name="action_filter_sortLight">light sensors</string>
+    <string name="action_filter_tv">TV devices</string>
+    <string name="action_filter_all">Show all</string>
+
+    <!-- HomeScreen Service Connection Indicator -->
+    <string name="action_menu_services_semiwa">semiwa: unknown</string>
+    <string name="action_menu_services_process">process: unknown</string>
+    <string name="action_menu_services_map">map: unknown</string>
+    <string name="action_menu_services_process_client">process client: unknown</string>
+    <string name="action_menu_services_unknown">myservice: unknown</string>
+
+    <!-- Settings -->
+    <string name="settings_category_ui_title">User interface</string>
+    <string name="settings_ui_theme_title">Color scheme (theme)</string>
+
+    <string-array name="settings_ui_theme_titles">
+        <item>Light</item>
+        <item>Dark</item>
+    </string-array>
+    <string-array name="settings_ui_theme_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+	<string name="settings_category_robot_title">Robotereinstellungen</string>
+    <string name="settings_category_services_title">Service Connection</string>
+    <string name="settings_services_semiwa_title">SeMiWa IP</string>
+    <string name="settings_services_process_title">Process Engine IP</string>
+    <string name="settings_services_map_title">Map Server IP</string>
+    <string name="services_summary">IP addresses for all services</string>
+    <string name="settings_ui_theme_hint">Das neue Farbschema wird wirksam, wenn Sie die Einstellungen verlassen.</string>
+    <string name="settings_ui_theme_hint_Children">Das neue Farbschema wird wirksam, wenn du die Einstellungen verlässt.</string>
+    <string name="settings_ui_colored_state_encoding_title">Farbige Sensorwerte</string>
+    <string name="settings_ui_colored_state_encoding_summary">Legt fest, ob kritische Sensorwerte farbig markiert werden (falls nicht, wird dies durch Zeichen kenntlich gemacht).</string>
+    <string name="settings_ui_vibrations_title">Vibrationen</string>
+    <string name="settings_ui_vibrations_summary">Legt fest, ob das Gerät beim Öffnen von Menüs oder beim Verschieben von Geräten vibriert.</string>
+    <string name="settings_ui_help_reminder_title">Hilfeerinnerung</string>
+    <string name="settings_ui_help_reminder_summary">Legt fest, ob in bestimmten zeitlichen Abständen eine Erinnerungsnachricht zur Hilfefunktion eingeblendet wird.</string>
+    <string name="settings_ui_assistant_based_navigation_title">Assistentenbasierte Navigation</string>
+    <string name="settings_ui_assistant_based_navigation_summary">Legt fest, ob die Navigation statt formular- eher assistentenbasiert ist. (Sind Reel-Menüs aktiv, ist die Navigation immer assistentenbasiert.)</string>
+    <string name="settings_category_tutorial_title">Tutorial</string>
+    <string name="settings_tutorial_btnRepeatTutorial">Einführung wiederholen</string>
+    <string name="settings_category_devices_title">Devices</string>
+    <string name="settings_devices_btnAddDevices">Geräte hinzufügen</string>
+    <string name="settings_category_dev_title">Developer Settings</string>
+    <string name="settings_dev_btnAddNewService">Neuen Dienst hinzufügen</string>
+    <string name="settings_dev_btnReset">App zurücksetzen (Einstellungen und Kontextmodell)</string>
+    <string name="settings_category_usersettings_title">Benutzereinstellungen</string>
+        <string name="settings_dev_enable_mock_data_summery">Some activities are filled with mock data. After changing this setting, a restart of the app is required.</string>
+    <string name="settings_dev_enable_mock_data_title">Activate MockData</string>
+    
+    <!-- User Settings -->
+    <string name="usersettings_settings_profile_title">User Profile</string>
+    <string name="usersettings_settings_state_title">State</string>
+    <string name="usersettings_settings_state_label">State: </string>
+    <string name="usersettings_settings_state_error">Error</string>
+    <string name="usersettings_settings_state_connected">Signed In</string>
+    <string name="usersettings_settings_state_diconnected">Signed Out</string>
+    <string name="usersettings_settings_error_dialog_title">Error</string>
+    <string name="usersettings_settings_error_dialog_button">OK</string>
+    <string name="usersettings_settings_error_no_connection">Not connected to PROtEUS. Please connect first.</string>
+    <string name="usersettings_settings_error_unknown">Unknown error while receiving users from PROtEUS.</string>
+    
+    <!-- Data is received from proteus -->
+    <string-array name="usersettings_user_names"></string-array>
+    <string-array name="usersettings_user_ids"></string-array>
+
+    <!-- All Apps -->
+
+    <string name="appTitle">All Apps</string>
+    <string name="button1">Active Apps</string>
+    <string name="button2">Installed Apps</string>
+    <string name="button3">App Repository</string>
+    <string name="title_activity_device_detail">DeviceDetailActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_process_dashboard">Process Manager</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+
+    <!-- Activity Names -->
+    <string name="title_activity_helplist">Help</string>
+    <string name="title_activity_alldevices">Location View</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="title_activity_wiki">Wikipedia</string>
+    <string name="title_activity_human_task">HumanTaskActivity</string>
+    <string name="title_activity_home">Home</string>
+
+    <!-- Process Views -->
+
+    <string name="process_fragment_overview">Overview</string>
+    <string name="process_fragment_active">Active</string>
+    <string name="process_fragment_closed">Finished</string>
+    <string name="process_fragment_create">Create</string>
+
+    <string-array name="process_array">
+        <item>Prozess 1</item>
+        <item>Prozess 2</item>
+        <item>Prozess 3</item>
+        <item>Prozess 5</item>
+        <item>Prozess 6</item>
+        <item>Prozess 7</item>
+        <item>Prozess 8</item>
+        <item>Prozess 9</item>
+    </string-array>
+
+    <!-- Robots -->
+    <string name="title_activity_nav_base">Navigation Center</string>
+    <string name="navigation_intro">First add a Map!</string>
+    <string name="intro_info_icon">Info icon to add a map.</string>
+    <string name="title_list_map_context">Maps</string>
+    <string name="title_list_robot_context">Robots</string>
+    <string name="title_list_poi_context">Points of Interest</string>
+    <string name="duplicate_name_message">Name already exists. Choose a different one.</string>
+    <string name="add_item_dialog_name">Name:</string>
+    <string name="add_map_button">Add Map</string>
+    <string name="add_map_dialog_default_name">Map</string>
+    <string name="add_map_dialog_source">Source</string>
+    <string name="add_map_dialog_default_source">home/source</string>
+    <string name="add_map_dialog_ip">IP:</string>
+    <string name="add_map_dialog_default_ip">192.168.1.6</string>
+    <string name="add_map_dialog_port">Port:</string>
+    <string name="add_map_dialog_default_port">9090</string>
+    <string name="add_robot_button">Add Robot</string>
+    <string name="add_robot_dialog_default_name">Robot</string>
+    <string name="add_robot_dialog_ip">IP:</string>
+    <string name="add_robot_dialog_default_ip">192.168.1.5</string>
+    <string name="add_robot_dialog_port">Port:</string>
+    <string name="add_robot_dialog_default_port">9090</string>
+    <string name="add_robot_dialog_type_turtle">Turtlebot</string>
+    <string name="add_robot_dialog_type_nao">Naobot</string>
+    <string name="add_robot_dialog_type_you">Youbot</string>
+    <string name="add_poi_button">Add Point of Interest</string>
+    <string name="add_poi_dialog_default_name">Point of Interest</string>
+    <string name="add_poi_dialog_room">Room:</string>
+    <string name="add_poi_dialog_default_room">Room 1</string>
+    <string name="add_poi_dialog_description">Description:</string>
+    <string name="add_poi_dialog_default_description">Is a Point of Interest</string>
+    <string name="item_list_collapse">Collapse List</string>
+    <string name="item_list_refresh">Refresh List</string>
+    <string name="map_list_item_icon">default icon of a map</string>
+    <string name="map_list_item_name">Default Map</string>
+    <string name="map_list_item_edit">edit map</string>
+    <string name="robot_list_item_icon">Icon of the Robot</string>
+    <string name="robot_list_item_name">Default Robot</string>
+    <string name="robot_list_item_location">Set Location of the Robot</string>
+    <string name="robot_list_item_video">Show Camera View</string>
+    <string name="robot_list_item_edit">Edit Robot</string>
+    <string name="poi_list_item_location">Set Location of the Point of Interest</string>
+    <string name="poi_list_item_edit">Edit Point of Interest</string>
+    <string name="mini_map_zoom_in_button">Button to zoom in..</string>
+    <string name="mini_map_zoom_out_button">Button to zoom out.</string>	
+    <string-array name="poi_array">
+        <item>General</item>
+        <item>Dockingstation</item>
+    </string-array>
+    
+    <string name="robot_settings_robot_section_title">Robot</string>
+    <string name="robot_settings_video_section_title">Mjpeg Server</string>
+   	<string name="robot_rosbridge_port_title">Rosbridge Port</string>
+	<string name="robot_sending_delay_title">Sending Delay</string>
+	<string name="robot_video_port_title">Port</string>
+    <string name="robot_video_topic_title">ROS Image Topic</string>
+    <string name="robot_video_quality_title">Videoquality</string>
+	
+   	<string-array name="video_quality_select">
+        <item>Best</item>
+        <item>Good</item>
+        <item>Balanced</item>
+        <item>Fast</item>
+        <item>Very Fast</item>
+    </string-array>
+    <string-array name="video_quality_values">
+        <item>100</item>
+        <item>90</item>
+        <item>50</item>
+        <item>40</item>
+        <item>20</item>
+    </string-array>
+
+    <!-- Home Screen -->
+    <string name="btn_process">Processes</string>
+    <string name="btn_floor">Robots</string>
+    <string name="btn_help">Help</string>
+    <string name="btn_home_alldevices">Dashboard</string>
+    <string name="btn_settings">Settings</string>
+    <string name="btn_todo1">TODO</string>
+    <string name="btn_home_humanTask">Human Task</string>
+    <string name="service_connected">connected</string>
+    <string name="service_error">failed to connect</string>
+    <string name="service_unknown">unknown</string>
+    <string name="service_semiwa">semiwa: </string>
+    <string name="service_processes">processes: </string>
+    <string name="service_myservice">myservice: </string>
+    <string name="service_map">map server: </string>
+    <string name="title_activity_dashboard_test">DashboardTestActivity</string>
+    <string name="title_activity_control">Control Center</string>
+    <string name="title_list_controls">Control</string>
+    <string name="title_gyrocontrol">Gyro Control</string>
+    <string name="title_touchcontrol">Touch Control</string>
+    <string name="title_minimap">Map</string>
+    <string name="control_turn_left">Turn Left</string>
+    <string name="control_turn_right">Turn Right</string>
+    <string name="control_stop">Stop</string>
+    <string name="control_accelerate">GO</string>
+    <string name="control_choose_speed">Speed</string>
+    <string name="battery_state_text">Battery:</string>
+    <string name="robot_disconnect">Disconnect</string>
+    <string name="robot_battery_noinfo">-</string>
+    <string name="grenzwert_min">minimum Grenzwert</string>
+    <string name="grenzwert_max">maximum Grenzwert</string>
+
+    <!-- Processes -->
+    <string name="app_name">ProcessView</string>
+    <string name="title_item_detail">Item Detail</string>
+    <string name="process_start">Start</string>
+    <string name="process_pause">Pause</string>
+    <string name="process_stop">Stop</string>
+    <string name="search">Search</string>
+    <string name="search_hint">Name of the process</string>
+    <string name="processes_all">All Processes</string>
+    <string name="processes_active">Active Processes</string>
+    <string name="start_ok">OK</string>
+    <string name="start_cancel">Cancel</string>
+    <string name="title_activity_sequence">SequenceActivity</string>
+    <string name="title_activity_sequence_instance">SequenceInstanceActivity</string>
+    <string name="sequence_instance">Status of Process Instance</string>
+    <string name="process_label_id">ID:</string>
+    <string name="process_label_name">Name:</string>
+    <string name="process_label_type">Type:</string>
+    <string name="status">Status:</string>
+    <string name="dataType">DataType</string>
+    <string name="description">Description:</string>
+    <string name="start_dialog_title">Please enter the input values</string>
+    <string name="add_type">add Type to List</string>
+    <string name="show_finished">show finished instances</string>
+    <string name="show_unfinished">show running instances</string>
+    <string name="process_label_value">Value:</string>
+    <string name="noConnection">No connection available</string>
+    <string name="showHistory">Show History</string>
+    <string name="inputData">Input Data</string>
+    <string name="outputData">Output Data</string>
+    <string name="submit">Submit</string>
+    <string name="information">i</string>
+
+    <!-- Human Task -->
+    <!-- Sort ActionBar Utility HumanTask english -->
+    <string name="humanTask_name">Human Task</string>
+    <string name="humanTask_inputFrag">Input Data</string>
+    <string name="humanTask_outputFrag">Output Data</string>
+    
+    <string name="action_sort_menuGroupName_e">Sort</string>
+    <string name="action_sort_by_name_e">by name</string>
+    <string name="action_sort_by_type_e">by type</string>
+    <string name="action_sort_by_date_e">by date</string>
+    <string name="action_sort_by_none_e">unsort</string>
+    
+    <!-- Filter ActionBar Utility HumanTask english -->
+    <string name="ht_filter_filter">Filter</string>
+    <string name="ht_filter_apply">Apply</string>
+    <string name="ht_filter_remove">Remove Filtering</string>
+    <string name="ht_filter_cancel">Cancel</string>
+</resources>

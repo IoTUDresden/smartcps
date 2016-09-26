@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Button xmlns:android="http://schemas.android.com/apk/res/android"
+	style="@style/btn"
+	android:layout_alignParentBottom="true"
+	android:layout_alignParentRight="true"
+	android:text="@string/btnFinish"
+	android:textSize="@dimen/tsNormal"
+	android:layout_marginBottom="@dimen/marginNormal"/>

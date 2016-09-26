@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/tutControl_relativeLayoutRoot"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:paddingLeft="@dimen/paddingNormal"
+	android:paddingRight="@dimen/paddingNormal">
+
+	<TextView
+		android:id="@+id/tutControl_txtNormal1"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerHorizontal="true"
+		android:layout_marginTop="@dimen/marginNormal"
+		android:gravity="center_horizontal"
+		android:text="@string/tutControl_txtNormal1"
+		android:textSize="@dimen/tsNormal"/>
+	
+	<RelativeLayout
+		android:id="@+id/tutControl_relativeLayout"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/tutControl_galleryHeight"
+		android:layout_below="@id/tutControl_txtNormal1"
+		android:layout_marginTop="@dimen/marginNormal"
+		android:background="?shapeBackground"
+		style="@style/paddingNormalRound">
+
+		<TextView
+			android:id="@+id/tutControl_txtCurrentStep"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:textSize="@dimen/tsNormal"/>
+
+		<TextView
+			android:id="@+id/tutControl_txtStep1"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerHorizontal="true"
+			android:layout_alignParentBottom="true"
+			android:drawablePadding="10dp"
+			android:drawableTop="@drawable/tut_control1"
+			android:gravity="center_horizontal"
+			android:text="@string/tutControl_txtStep1"
+			android:textSize="@dimen/tsNormal"
+			android:visibility="visible"/>
+
+		<TextView
+			android:id="@+id/tutControl_txtStep2"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerInParent="true"
+			android:drawablePadding="10dp"
+			android:drawableTop="@drawable/tut_control2"
+			android:gravity="center_horizontal"
+			android:text="@string/tutControl_txtStep2"
+			android:textSize="@dimen/tsNormal"
+			android:visibility="invisible"/>
+
+		<TextView
+			android:id="@+id/tutControl_txtStep3"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerInParent="true"
+			android:drawablePadding="10dp"
+			android:drawableTop="@drawable/tut_control3"
+			android:gravity="center_horizontal"
+			android:text="@string/tutControl_txtStep3"
+			android:textSize="@dimen/tsNormal"
+			android:visibility="invisible"/>
+	</RelativeLayout>
+
+	<include
+		android:id="@+id/btnNext"
+		layout="@layout/_btn_next"/>
+	
+	<include
+		android:id="@+id/btnClose"
+		layout="@layout/_btn_close"/>
+
+</RelativeLayout>

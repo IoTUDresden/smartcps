@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_frame"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="true"
+    android:background="@drawable/card"
+    android:descendantFocusability="blocksDescendants"
+    android:padding="15dp" >
+
+    <TextView
+        android:id="@+id/item_detail_id_label"
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:padding="12dp"
+        android:text="@string/process_label_id"
+        android:textColor="@android:color/black"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/item_detail_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="false"
+        android:layout_centerInParent="true"
+        android:padding="12dp"
+        android:textColor="@android:color/black"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:minHeight="10dp"
+        android:text="@string/process_stop"
+        android:textColor="@android:color/black" />
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:minHeight="10dp"
+        android:text="@string/process_start"
+        android:textColor="@android:color/black" />
+
+    <Button
+        android:id="@+id/pause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/stop"
+        android:layout_alignBottom="@+id/stop"
+        android:layout_toLeftOf="@+id/stop"
+        android:minHeight="10dp"
+        android:text="@string/process_pause"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/properties_port_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:padding="5dp"
+        android:layout_marginLeft="5dp"
+        android:text="placeholder"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/process_item_type_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/properties_port_name"
+        android:layout_below="@+id/properties_port_name"
+        android:padding="5dp"
+        android:text="@string/process_label_type"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/item_detail_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/item_detail_type"
+        android:layout_alignBottom="@+id/item_detail_type"
+        android:layout_alignRight="@+id/stop"
+        android:gravity="right"
+        android:padding="5dp"
+        android:text="placeholder"
+        android:textColor="@color/blue" />
+
+    <TextView
+        android:id="@+id/item_detail_description_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/process_item_type_label"
+        android:layout_below="@+id/process_item_type_label"
+        android:padding="5dp"
+        android:text="@string/description"
+        android:textColor="@android:color/black"
+        android:alpha="0"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/item_detail_type"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/process_item_type_label"
+        android:layout_alignBottom="@+id/process_item_type_label"
+        android:layout_toRightOf="@+id/process_item_type_label"
+        android:padding="5dp"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/item_detail_description"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_detail_type"
+        android:layout_toRightOf="@+id/item_detail_description_label"
+        android:padding="5dp"
+        android:textColor="@android:color/black"
+        android:alpha="0"
+        android:visibility="gone"  />
+
+</RelativeLayout>

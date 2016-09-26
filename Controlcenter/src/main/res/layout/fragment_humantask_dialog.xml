@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="400dp"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/dialogName"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/dialogDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginStart="10dp"
+        android:textSize="20sp"
+        android:textStyle="italic" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/darker_gray" />
+
+    <LinearLayout
+        android:id="@+id/dialogInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dialogButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginStart="10dp"
+        android:gravity="end"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+</LinearLayout>

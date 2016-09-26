@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/linearLayoutTechnicalSkills"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:layout_centerHorizontal="true"
+	android:layout_marginTop="@dimen/marginNormal"
+	android:orientation="vertical"
+	android:gravity="center_horizontal">
+
+	<TextView
+		android:id="@+id/tutEvaluation_txtTechnicalSkills"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/tutEvaluation_txtTechnicalSkills"
+		android:textSize="@dimen/tsNormal"
+		android:gravity="center_horizontal"/>
+	
+	<Spinner
+		android:id="@+id/tutEvaluation_spnTechnicalSkills"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:gravity="center_horizontal"/>
+
+</LinearLayout>

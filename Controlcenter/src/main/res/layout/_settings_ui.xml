@@ -1,0 +1,36 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/settings_fragmentUI">
+
+	<ListPreference
+		android:defaultValue="0"
+		android:entries="@array/settings_ui_theme_titles"
+		android:entryValues="@array/settings_ui_theme_values"
+		android:key="settings_ui_theme"
+		android:negativeButtonText="@null"
+		android:positiveButtonText="@null"
+		android:title="@string/settings_ui_theme_title"/>
+	
+	<CheckBoxPreference
+		android:defaultValue="true"
+		android:key="settings_ui_colored_state_encoding"
+		android:title="@string/settings_ui_colored_state_encoding_title"
+		android:summary="@string/settings_ui_colored_state_encoding_summary"/>
+	
+	<CheckBoxPreference
+		android:defaultValue="true"
+		android:key="settings_ui_vibrations"
+		android:title="@string/settings_ui_vibrations_title"
+		android:summary="@string/settings_ui_vibrations_summary"/>
+	
+	<CheckBoxPreference
+		android:defaultValue="true"
+		android:key="settings_ui_help_reminder"
+		android:title="@string/settings_ui_help_reminder_title"
+		android:summary="@string/settings_ui_help_reminder_summary"/>
+	
+	<CheckBoxPreference
+		android:defaultValue="false"
+		android:key="settings_ui_assistant_based_navigation"
+		android:title="@string/settings_ui_assistant_based_navigation_title"
+		android:summary="@string/settings_ui_assistant_based_navigation_summary"/>
+
+</PreferenceScreen>

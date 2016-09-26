@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<dimen name="welcomeLogoWidth">50dp</dimen>
+	<dimen name="welcomeLogoHeight">50dp</dimen>
+	<dimen name="homeWheatherImageWidth">75dp</dimen>
+	<dimen name="homeWheatherImageHeight">75dp</dimen>
+	<dimen name="largeLogoWidth">35dp</dimen>
+	<dimen name="largeLogoHeight">35dp</dimen>
+	<dimen name="tutWelcome_Headline">22sp</dimen>
+	<dimen name="tutControl_galleryHeight">338dp</dimen>
+	<dimen name="tutReelMenu_galleryHeight">283dp</dimen>
+	<dimen name="help_Headline">20sp</dimen>
+	<dimen name="home_Headline">14sp</dimen>
+	<dimen name="tsNormal">14sp</dimen>
+	<dimen name="tsHelpNormal">12sp</dimen>
+	<dimen name="tsToast">10sp</dimen>
+	<dimen name="tsBreadcrumbs">10sp</dimen>
+	<dimen name="marginNormal">10dp</dimen>
+	<dimen name="marginMedium">20dp</dimen>
+	<dimen name="marginLarge">30dp</dimen>
+	<dimen name="marginToast">90dp</dimen>
+	<dimen name="paddingToast">6dp</dimen>
+	<dimen name="paddingNormal">10dp</dimen>
+	<dimen name="paddingSmall">6dp</dimen>
+	<dimen name="paddingCompoundImage">5dp</dimen>
+	<dimen name="paddingHorizontalButton">20dp</dimen>
+	<dimen name="paddingHorizontalButtonClose">10dp</dimen>
+	<dimen name="paddingVerticalButton">10dp</dimen>
+	<dimen name="paddingVerticalBreadcrumbs">8dp</dimen>
+	<dimen name="borderWidth">0.1dp</dimen>
+    <dimen name="borderWidthHeader">0.05dp</dimen>
+	
+	<dimen name="addNewServiceTableWidth">300dp</dimen>
+	
+	<dimen name="shapeTextSize">11sp</dimen>
+	<dimen name="shapeStateCompoundImageWidth">14dp</dimen>
+	<dimen name="shapeStateCompoundImageHeight">14dp</dimen>
+	<dimen name="shapeTextSizeSensor">28sp</dimen>
+	<dimen name="shapePaddingHorizontal">1dp</dimen>
+	<dimen name="shapePaddingVertical">1dp</dimen>
+	<dimen name="shapeWidth">144dp</dimen>
+	<dimen name="shapeExtendedWidth">298dp</dimen>
+	<dimen name="shapeHeight">95dp</dimen>
+	
+	<dimen name="reelMenuTextSize">14sp</dimen>
+	<dimen name="reelMenuPaddingHorizontal">35dp</dimen>
+	<dimen name="reelMenuPaddingVertical">6dp</dimen>
+	<dimen name="reelMenuCompoundImageHeight">14dp</dimen>
+	
+	
+	<!--  All Apps -->
+	
+	<dimen name="appIconPadding">10dp</dimen>
+	<dimen name="appIconTextSize">16px</dimen>
+	<dimen name="buttonWitdh">100dp</dimen>
+	<dimen name="appTitle">30dp</dimen>
+	<dimen name="buttonImagePadding">15dp</dimen>
+	<dimen name="layoutMarginTop">45dp</dimen>
+	<dimen name="gridMarginLeft">20dp</dimen>
+	<dimen name="paddingbutton">10dp</dimen>
+	
+
+</resources>

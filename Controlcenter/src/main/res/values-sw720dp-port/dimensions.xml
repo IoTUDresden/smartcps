@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<!-- factor 1,8 -->
+	<dimen name="tutControl_galleryHeight">700dp</dimen>
+	<dimen name="tutReelMenu_galleryHeight">700dp</dimen>
+
+</resources>

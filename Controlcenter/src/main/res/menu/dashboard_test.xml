@@ -1,0 +1,34 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="eu.vicci.ecosystem.standalone.controlcenter.android.DashboardTestActivity" >
+
+    <item
+        android:id="@+id/menu_sort_group"
+        android:showAsAction="ifRoom"
+        android:title="@string/action_sort_menuGroupName">
+        <menu>
+            <item
+                android:id="@+id/menu_sort_by_name"
+                android:showAsAction="ifRoom"
+                android:title="@string/action_sort_by_name"/>
+            <item
+                android:id="@+id/menu_sort_by_type"
+                android:showAsAction="ifRoom"
+                android:title="@string/action_sort_by_type"/>
+            <item
+                android:id="@+id/menu_sort_by_room"
+                android:showAsAction="ifRoom"
+                android:title="@string/action_sort_by_room"/>
+            <item
+                android:id="@+id/menu_sort_by_none"
+                android:showAsAction="ifRoom"
+                android:title="@string/action_sort_by_none"/>
+        </menu>
+    </item>
+    <item
+        android:id="@+id/menu_filter"
+        android:icon="?actionFilterDrawable"
+        android:showAsAction="ifRoom"
+        android:title="@string/action_filter_menuGroupName"/>
+
+</menu>

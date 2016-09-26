@@ -1,0 +1,22 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/card"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/portName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="@string/start_dialog_title"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/background_dark_grey" >
+
+    </FrameLayout>
+    
+</LinearLayout>

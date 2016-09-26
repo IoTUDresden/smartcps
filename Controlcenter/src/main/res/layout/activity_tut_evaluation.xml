@@ -1,0 +1,30 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/tutEvaluation_relativeLayoutRoot"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:paddingLeft="@dimen/paddingNormal"
+	android:paddingRight="@dimen/paddingNormal">
+
+	<TextView
+		android:id="@+id/tutEvaluation_txtNormal1"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/marginNormal"
+		android:gravity="center_horizontal"
+		android:text="@string/tutEvaluation_txtNormal1"
+		android:textSize="@dimen/tsNormal"/>
+
+	<LinearLayout
+		android:id="@+id/tutEvaluation_containerEvaluationContext"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/tutEvaluation_txtNormal1"
+		android:layout_centerHorizontal="true"
+		android:gravity="center_horizontal"
+		android:orientation="vertical"/>
+
+	<include
+		android:id="@+id/btnNext"
+		layout="@layout/_btn_next"/>
+
+</RelativeLayout>

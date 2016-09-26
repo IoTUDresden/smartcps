@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_filter"
+        android:icon="?actionFilterDrawable"
+        android:showAsAction="ifRoom"
+        android:title="@string/action_filter_menuGroupName"/>
+
+</menu>

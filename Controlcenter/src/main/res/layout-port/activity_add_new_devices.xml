@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/addNewDevices_relativeLayoutRoot"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:paddingLeft="@dimen/paddingNormal"
+	android:paddingRight="@dimen/paddingNormal">
+
+	<TextView
+		android:id="@+id/addNewDevices_txtNormal1"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerHorizontal="true"
+		android:layout_marginTop="@dimen/marginNormal"
+		android:gravity="center_horizontal"
+		android:text="@string/addNewDevices_txtNormal1"
+		android:textSize="@dimen/tsNormal"/>
+	
+	<LinearLayout
+		android:id="@+id/addNewDevices_linearLayoutAdd"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:gravity="center_horizontal"
+		android:orientation="vertical"
+		android:layout_below="@id/addNewDevices_txtNormal1"
+		android:layout_centerHorizontal="true"
+		android:layout_marginTop="@dimen/marginLarge">
+
+		<Button
+			android:id="@+id/addNewDevices_btnAddAll"
+			style="@style/btn"
+			android:layout_marginBottom="@dimen/marginNormal"
+			android:text="@string/addNewDevices_btnAddAll"
+			android:textSize="@dimen/tsNormal"/>
+
+		<Button
+			android:id="@+id/addNewDevices_btnAddSome"
+			style="@style/btn"
+			android:layout_marginBottom="@dimen/marginNormal"
+			android:text="@string/addNewDevices_btnAddSome"
+			android:textSize="@dimen/tsNormal"/>
+
+		<Button
+			android:id="@+id/addNewDevices_btnAddNone"
+			style="@style/btn"
+			android:text="@string/addNewDevices_btnAddNone"
+			android:textSize="@dimen/tsNormal"/>
+	</LinearLayout>
+
+</RelativeLayout>

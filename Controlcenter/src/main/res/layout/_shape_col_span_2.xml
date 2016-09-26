@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="@dimen/shapeExtendedWidth"
+	android:layout_height="@dimen/shapeHeight"
+	android:layout_marginRight="@dimen/paddingNormal"
+	android:layout_marginBottom="@dimen/paddingNormal"
+	android:layout_columnSpan="2"
+	android:background="?shapeBackground"
+	android:orientation="vertical"/>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<attr name="textColor" format="reference"/>
+	<attr name="linkColor" format="reference"/>
+	
+	<attr name="actionHelpDrawable" format="reference"/>
+	<attr name="actionServerDrawable" format="reference"/>
+	<attr name="actionSettingsDrawable" format="reference"/>
+	<attr name="actionFloorDrawable" format="reference"/>
+	<attr name="actionFilterDrawable" format="reference"/>
+	<attr name="actionAppdashboardDrawable" format="reference"/>
+    <attr name="actionProcessdashboardDrawable" format="reference"/>
+    
+	<attr name="btnHomeControlAllDevicesDrawable" format="reference"/>
+	<attr name="btnHomeControlFloorDrawable" format="reference"/>
+	<attr name="deviceTVDrawable" format="reference"/>
+	<attr name="deviceTemperatureSensorDrawable" format="reference"/>
+	<attr name="stateChannelDasErsteDrawable" format="reference"/>
+	<attr name="stateChannelZDFDrawable" format="reference"/>
+	<attr name="statePowerDrawable" format="reference"/>
+	<attr name="stateVolumeDrawable" format="reference"/>
+	<attr name="stateVolumeMuteDrawable" format="reference"/>
+	<attr name="reelMenuDrawable" format="reference"/>
+	<attr name="bordered_oval" format="reference"/>
+	<attr name="shapeBackground" format="reference"/>
+	<attr name="shapeBackgroundLeft" format="reference"/>
+	<attr name="shapeBackgroundRight" format="reference"/>
+	<attr name="shapeHeaderColor" format="reference"/>
+	<attr name="breadcrumbsDividerColor" format="reference"/>
+	
+	<!-- Dashboard -->
+	<attr name="shapeSingleGrid" format="reference"/>
+	<attr name="shapeSingleGridHeader" format="reference"/>
+	<attr name="shapeSingleGridHeaderText" format="color"/>
+
+</resources>

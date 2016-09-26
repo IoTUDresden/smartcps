@@ -1,0 +1,23 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minHeight="230dp"
+    android:background="@color/clShapeBackgroundStartColorLight" >
+
+
+ <com.tonicartos.widget.stickygridheaders.StickyGridHeadersGridView     
+         android:id="@+id/htchooser_gridview"
+    	android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="10dp"
+        android:clickable="false"
+        android:columnWidth="150dp"
+        android:focusable="false"
+        android:gravity="center"
+        android:horizontalSpacing="10dp"
+        android:numColumns="auto_fit"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="10dp" /> 
+
+</RelativeLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<!-- factor 1,8 -->
+	<dimen name="welcomeLogoWidth">100dp</dimen>
+	<dimen name="welcomeLogoHeight">100dp</dimen>
+	<dimen name="homeWheatherImageWidth">150dp</dimen>
+	<dimen name="homeWheatherImageHeight">150dp</dimen>
+	<dimen name="largeLogoWidth">75dp</dimen>
+	<dimen name="largeLogoHeight">75dp</dimen>
+	<dimen name="tutWelcome_Headline">40sp</dimen>
+	<dimen name="tutControl_galleryHeight">510dp</dimen>
+	<dimen name="tutReelMenu_galleryHeight">446dp</dimen>
+	<dimen name="help_Headline">25sp</dimen>
+	<dimen name="home_Headline">25sp</dimen>
+	<dimen name="tsNormal">26sp</dimen>
+	<dimen name="tsHelpNormal">22sp</dimen>
+	<dimen name="tsToast">18sp</dimen>
+	<dimen name="tsBreadcrumbs">18sp</dimen>
+	<dimen name="marginNormal">20dp</dimen>
+	<dimen name="marginMedium">40dp</dimen>
+	<dimen name="marginLarge">60dp</dimen>
+	<dimen name="marginToast">120dp</dimen>
+	<dimen name="paddingToast">10dp</dimen>
+	<dimen name="paddingNormal">20dp</dimen>
+	<dimen name="paddingSmall">10dp</dimen>
+	<dimen name="paddingCompoundImage">10dp</dimen>
+	<dimen name="paddingHorizontalButton">50dp</dimen>
+	<dimen name="paddingHorizontalButtonClose">50dp</dimen>
+	<dimen name="paddingVerticalButton">25dp</dimen>
+	<dimen name="paddingVerticalBreadcrumbs">15dp</dimen>
+	<dimen name="borderWidth">1dp</dimen>
+	
+	<dimen name="addNewServiceTableWidth">600dp</dimen>
+	
+	<dimen name="shapeTextSize">20sp</dimen>
+	<dimen name="shapeStateCompoundImageWidth">32dp</dimen>
+	<dimen name="shapeStateCompoundImageHeight">32dp</dimen>
+	<dimen name="shapeTextSizeSensor">50sp</dimen>
+	<dimen name="shapePaddingHorizontal">3dp</dimen>
+	<dimen name="shapePaddingVertical">3dp</dimen>
+	<dimen name="shapeWidth">232dp</dimen>
+	<dimen name="shapeExtendedWidth">484dp</dimen>
+	<dimen name="shapeHeight">192dp</dimen>
+	
+	<dimen name="reelMenuTextSize">26sp</dimen>
+	<dimen name="reelMenuPaddingHorizontal">50dp</dimen>
+	<dimen name="reelMenuPaddingVertical">15dp</dimen>
+	<dimen name="reelMenuCompoundImageHeight">32dp</dimen>
+
+</resources>

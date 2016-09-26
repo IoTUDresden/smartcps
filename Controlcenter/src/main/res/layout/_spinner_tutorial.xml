@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/spinnerTarget"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:gravity="center"
+	android:paddingBottom="@dimen/paddingVerticalButton"
+	android:paddingLeft="@dimen/paddingHorizontalButton"
+	android:paddingRight="@dimen/paddingHorizontalButton"
+	android:paddingTop="@dimen/paddingVerticalButton"
+	android:textSize="@dimen/tsNormal"/>

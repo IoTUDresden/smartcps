@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/robo_view_fragment_edit_robot_dialog"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+	
+	<!-- input fielt for the name of the robot -->
+    <LinearLayout
+       android:layout_width="fill_parent" 
+       android:layout_height="wrap_content" 
+       android:orientation="horizontal"
+       android:layout_marginLeft="10dp"
+       android:layout_marginRight="10dp"
+	   android:layout_marginTop="10dp">
+    
+	    <TextView
+	        android:text="@string/add_item_dialog_name"
+	        android:layout_width="80dp"
+	    	android:layout_height="wrap_content"
+
+			android:textSize="20sp">
+	    </TextView> 
+	    <EditText
+	        android:id="@+id/edit_robot_instance_name"
+	        android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content"
+			android:textSize="20sp"
+			android:inputType="text"
+			android:maxLength="15">
+	    </EditText> 
+	</LinearLayout>
+	
+    <!-- textview shown when duplicate name is entered -->
+    <TextView
+        android:id="@+id/duplicate_edit_robot_name"
+        android:text="@string/duplicate_name_message"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:visibility="gone"
+		android:textSize="15sp">
+	</TextView> 
+	
+	<!-- input fielt for the ip of the robot -->
+    <LinearLayout
+       android:layout_width="fill_parent" 
+       android:layout_height="wrap_content" 
+       android:orientation="horizontal"
+       android:layout_marginLeft="10dp"
+       android:layout_marginRight="10dp"
+	   android:layout_marginTop="10dp">
+    
+	    <TextView
+	        android:text="@string/add_robot_dialog_ip"
+	        android:layout_width="80dp"
+	    	android:layout_height="wrap_content"
+			android:textSize="20sp">
+	    </TextView> 
+	    <EditText
+	        android:id="@+id/edit_robot_instance_ip"
+	        android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content"
+			android:textSize="20sp">
+	    </EditText> 
+	</LinearLayout> 
+	
+   	<!-- input fielt for the port of the robot -->
+    <LinearLayout
+       android:layout_width="fill_parent" 
+       android:layout_height="wrap_content" 
+       android:orientation="horizontal"
+       android:layout_marginLeft="10dp"
+       android:layout_marginRight="10dp"
+	   android:layout_marginTop="10dp">
+    
+	    <TextView
+	        android:text="@string/add_robot_dialog_port"
+	        android:layout_width="80dp"
+	    	android:layout_height="wrap_content"
+			android:textSize="20sp">
+	    </TextView> 
+	    <EditText
+	        android:id="@+id/edit_robot_instance_port"
+	        android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content"
+			android:textSize="20sp"
+			android:inputType="number">
+	    </EditText> 
+	</LinearLayout>  
+
+</LinearLayout> 

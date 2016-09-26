@@ -1,0 +1,81 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/portNameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="@string/process_label_name"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/portName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:padding="10dp"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="@string/process_label_type"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/portType"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:padding="10dp"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <CheckBox
+        android:id="@+id/portBool"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/portText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:inputType="text"
+        android:visibility="gone" >
+
+        <requestFocus />
+    </EditText>
+
+    <RelativeLayout
+        android:id="@+id/portListContainer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:id="@+id/portListLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/portListAddButton"
+            android:layout_width="40dp"
+            android:padding="10dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/portListLayout"
+            android:contentDescription="@string/add_type"
+            android:src="@drawable/ic_action_new" />
+
+    </RelativeLayout>
+
+</LinearLayout>

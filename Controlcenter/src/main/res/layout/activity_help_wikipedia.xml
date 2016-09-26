@@ -1,0 +1,12 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/help_relativeLayoutRoot"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+    android:paddingTop="?android:attr/actionBarSize">
+
+	<WebView
+		android:id="@+id/helpWikipedia_webView"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"/>
+
+</RelativeLayout>

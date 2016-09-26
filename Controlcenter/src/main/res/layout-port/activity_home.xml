@@ -1,0 +1,117 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/home_relativeLayoutRoot"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:paddingLeft="@dimen/paddingNormal"
+	android:paddingRight="@dimen/paddingNormal"
+    android:paddingTop="?android:attr/actionBarSize">
+
+	<TextView
+		android:id="@+id/home_txtActiveDevices"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+
+		android:layout_marginTop="@dimen/marginNormal"
+		android:text="@string/home_txtActiveDevices"
+		android:textSize="@dimen/tsNormal"/>
+    
+	<eu.vicci.ecosystem.standalone.controlcenter.android.reelmenu.LockableScrollView
+		android:id="@+id/lockableScrollViewShapes"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_below="@id/home_txtActiveDevices"
+		android:layout_marginBottom="@dimen/marginNormal"
+		android:layout_marginTop="@dimen/marginNormal"
+		android:scrollbars="vertical">
+
+		<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        
+        android:orientation="vertical"
+        android:padding="5dp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_home_process"
+                style="@style/dashboard_button"
+                android:layout_margin="20dp"
+                android:background="@drawable/bordered_oval_light"
+                android:drawableTop="@drawable/home_process"
+                android:onClick="clicked"
+                android:text="@string/btn_process" />
+
+            <Button
+                android:id="@+id/btn_home_turtlebot"
+                style="@style/dashboard_button"
+                android:layout_margin="20dp"
+                android:background="@drawable/bordered_oval_light"
+                android:drawableTop="@drawable/home_robot"
+                android:text="@string/btn_floor" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_home_help"
+                style="@style/dashboard_button"
+                android:layout_margin="20dp"
+                android:background="@drawable/bordered_oval_light"
+                android:drawableTop="@drawable/home_help"
+                android:onClick="clicked"
+                android:text="@string/btn_help" />
+
+            <Button
+                android:id="@+id/btn_home_settings"
+                style="@style/dashboard_button"
+                android:layout_margin="20dp"
+                android:background="@drawable/bordered_oval_light"
+                android:drawableTop="@drawable/home_settings"
+                android:onClick="clicked"
+                android:text="@string/btn_settings" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_home_alldevices"
+                style="@style/dashboard_button"
+                android:layout_margin="20dp"
+                android:background="@drawable/bordered_oval_light"
+                android:drawableTop="@drawable/home_devices"
+                android:onClick="clicked"
+                android:text="@string/btn_home_alldevices" />
+
+            <Button
+                android:id="@+id/btn_home_humanTask"
+                style="@style/dashboard_button"
+                android:layout_margin="20dp"
+                android:background="@drawable/bordered_oval_light"
+                android:drawableTop="@drawable/home_humantask"
+                android:text="@string/btn_home_humanTask" />
+
+        </LinearLayout>
+    </LinearLayout>
+	</eu.vicci.ecosystem.standalone.controlcenter.android.reelmenu.LockableScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/linearLayoutHandicaps"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:layout_centerHorizontal="true"
+	android:layout_marginTop="@dimen/marginNormal"
+	android:gravity="center_horizontal"
+	android:orientation="vertical">
+
+	<TextView
+		android:id="@+id/tutEvaluation_txtHandicaps"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:gravity="center_horizontal"
+		android:text="@string/tutEvaluation_txtHandicaps"
+		android:textSize="@dimen/tsNormal"/>
+
+	<LinearLayout
+		android:id="@+id/tutEvaluation_linearLayoutHandicaps"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/marginLarge"
+		android:gravity="center_horizontal"
+		android:orientation="vertical">
+
+		<LinearLayout
+			android:id="@+id/s"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+
+			<ToggleButton
+				android:id="@+id/tutEvaluation_tglHandicapsSight"
+				style="@style/btn"
+				android:layout_marginBottom="@dimen/marginNormal"
+				android:layout_marginRight="@dimen/marginNormal"
+				android:text="@string/tutEvaluation_tglHandicapsSight"
+				android:textOff="@string/tutEvaluation_tglHandicapsSight"
+				android:textOn="@string/tutEvaluation_tglHandicapsSight"
+				android:textSize="@dimen/tsNormal"/>
+
+			<ToggleButton
+				android:id="@+id/tutEvaluation_tglHandicapsMotorSkills"
+				style="@style/btn"
+				android:layout_marginBottom="@dimen/marginNormal"
+				android:text="@string/tutEvaluation_tglHandicapsMotorSkills"
+				android:textOff="@string/tutEvaluation_tglHandicapsMotorSkills"
+				android:textOn="@string/tutEvaluation_tglHandicapsMotorSkills"
+				android:textSize="@dimen/tsNormal"/>
+		</LinearLayout>
+
+		<ToggleButton
+			android:id="@+id/tutEvaluation_tglHandicapsMemory"
+			style="@style/btn"
+			android:text="@string/tutEvaluation_tglHandicapsMemory"
+			android:textOff="@string/tutEvaluation_tglHandicapsMemory"
+			android:textOn="@string/tutEvaluation_tglHandicapsMemory"
+			android:textSize="@dimen/tsNormal"/>
+	</LinearLayout>
+
+</LinearLayout>

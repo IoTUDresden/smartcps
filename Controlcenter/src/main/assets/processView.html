@@ -1,0 +1,299 @@
+<!DOCTYPE html> 
+<html>
+<head>
+
+	<!--also nice lib
+	http://philogb.github.io/jit/docs.html
+
+	https://gojs.net/latest/samples/dataFlow.html
+	https://gojs.net/latest/samples/dynamicPorts.html
+	https://gojs.net/latest/samples/navigation.html
+	https://gojs.net/latest/samples/IVRtree.html 
+	https://gojs.net/latest/intro/subgraphs.html
+	
+	-->
+
+	<script src="go.js" type="text/javascript"></script>
+	<script src="jquery-3.1.0.min.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		var GO;
+		var portSize = new go.Size(8, 8);
+		var processColor = "#0099CC";
+		var groupBGColor = "#DAE4E4";
+		var isFirstAnimation = true;
+		var myDiagram;
+
+		$(document).ready(function() {
+		    GO = go.GraphObject.make;
+		    console.log('window loaded');
+		});
+		
+		function changeProcessState(processId, color){
+			 var data = myDiagram.model.findNodeDataForKey(processId);
+			if (data !== null) myDiagram.model.setDataProperty(data, "stateColor", color);
+		}
+		
+		function onNodeClicked(e, obj) {
+			var key = obj.data.key;
+			ProcessView.onProcessClicked(key);		
+		}
+
+		function doLinkTemplate(myDiagram) {
+		    myDiagram.linkTemplate =
+		        GO(go.Link, {
+		                routing: go.Link.Orthogonal,
+		                corner: 5
+		            },
+		            GO(go.Shape, {
+		                strokeWidth: 2
+		            }, new go.Binding("stroke", "color")),
+		            GO(go.Shape, {
+		                toArrow: "Standard"
+		            }, new go.Binding("fill", "color"), new go.Binding("stroke", "color"))
+		        );
+		}
+
+		function doTemplate(myDiagram) {
+		    myDiagram.nodeTemplate =
+		        GO(go.Node, "Table", {
+		                locationObjectName: "BODY",
+		                locationSpot: go.Spot.Center,
+		                selectionObjectName: "BODY",
+						click: onNodeClicked,
+						selectionAdorned: false
+		            },
+
+		            // the body
+		            GO(go.Panel, "Auto", {
+		                    row: 1,
+		                    column: 1,
+		                    name: "BODY",
+		                    stretch: go.GraphObject.Fill
+		                },
+		                GO(go.Shape, "RoundedRectangle", {
+							parameter1: 2,
+		                    fill: processColor,
+		                    strokeWidth: 3,
+		                    minSize: new go.Size(56, 56)
+		                }, new go.Binding("stroke", "stateColor")),
+		                GO(go.TextBlock, {
+		                    margin: 10,
+		                    textAlign: "center",
+		                    font: "14px  Segoe UI,sans-serif",
+		                    stroke: "white",
+		                    editable: false
+		                }, new go.Binding("text", "name"))
+		            ), // end Auto Panel body
+
+		            // the Panel holding the left port elements, which are themselves Panels,
+		            // created for each item in the itemArray, bound to data.leftArray
+		            GO(go.Panel, "Vertical", new go.Binding("itemArray", "leftArray"), {
+		                row: 1,
+		                column: 0,
+		                itemTemplate: GO(go.Panel, {
+		                            _side: "left", // internal property to make it easier to tell which side it's on
+		                            fromSpot: go.Spot.Left,
+		                            toSpot: go.Spot.Left,
+		                            fromLinkable: true,
+		                            toLinkable: true,
+		                            cursor: "pointer"
+		                        },
+		                        new go.Binding("portId", "portId"),
+		                        GO(go.Shape, "Rectangle", {
+		                            stroke: null,
+		                            strokeWidth: 0,
+		                            desiredSize: portSize,
+		                            margin: new go.Margin(1, 0)
+		                        }, new go.Binding("fill", "portColor"))
+		                    ) // end itemTemplate
+		            }), // end Vertical Panel
+
+		            // the Panel holding the right port elements, which are themselves Panels,
+		            // created for each item in the itemArray, bound to data.rightArray
+		            GO(go.Panel, "Vertical",
+		                new go.Binding("itemArray", "rightArray"), {
+		                    row: 1,
+		                    column: 2,
+		                    itemTemplate: GO(go.Panel, {
+		                                _side: "right",
+		                                fromSpot: go.Spot.Right,
+		                                toSpot: go.Spot.Right,
+		                                fromLinkable: true,
+		                                toLinkable: true,
+		                                cursor: "pointer"
+		                            },
+		                            new go.Binding("portId", "portId"),
+		                            GO(go.Shape, "Rectangle", {
+		                                    stroke: null,
+		                                    strokeWidth: 0,
+		                                    desiredSize: portSize,
+		                                    margin: new go.Margin(1, 0)
+		                                },
+		                                new go.Binding("fill", "portColor"))
+		                        ) // end itemTemplate
+		                }
+		            ) // end Vertical Panel
+
+		        ); // end Node
+
+
+		}
+
+
+		function doGroupTemplate(myDiagram) {
+		    myDiagram.groupTemplate = GO(go.Group, "Table", {
+		            locationObjectName: "BODY",
+		            locationSpot: go.Spot.Center,
+		            selectionObjectName: "BODY",
+					click: onNodeClicked,
+					selectionAdorned: false,
+		            layout: getGroupLayout()
+		        },
+
+		        GO(go.Panel, "Auto", {
+		                row: 1,
+		                column: 1,
+		                name: "BODY"
+		            },
+
+		            GO(go.Shape, "RoundedRectangle", {
+		                parameter1: 2,
+		                fill: processColor,
+						strokeWidth: 4
+		            }, new go.Binding("stroke", "stateColor")),
+		            GO(go.Panel, "Vertical", GO(go.TextBlock, {
+		                    font: "Bold 12pt Sans-Serif",
+		                    stroke: 'white'
+		                }, new go.Binding("text", "name")),
+		                GO(go.Placeholder, {
+		                    padding: 5,
+		                    background: groupBGColor
+		                }))
+
+		        ),
+
+		        // the Panel holding the left port elements, which are themselves Panels,
+		        // created for each item in the itemArray, bound to data.leftArray
+		        GO(go.Panel, "Vertical", new go.Binding("itemArray", "leftArray"), {
+		            row: 1,
+		            column: 0,
+		            itemTemplate: GO(go.Panel, {
+		                        _side: "left", // internal property to make it easier to tell which side it's on
+		                        fromSpot: go.Spot.Left,
+		                        toSpot: go.Spot.Left,
+		                        fromLinkable: true,
+		                        toLinkable: true,
+		                        cursor: "pointer"
+		                    },
+		                    new go.Binding("portId", "portId"),
+		                    GO(go.Shape, "Rectangle", {
+		                        stroke: null,
+		                        strokeWidth: 0,
+		                        desiredSize: portSize,
+		                        margin: new go.Margin(1, 0)
+		                    }, new go.Binding("fill", "portColor"))
+		                ) // end itemTemplate
+		        }), // end Vertical Panel
+
+		        // the Panel holding the right port elements, which are themselves Panels,
+		        // created for each item in the itemArray, bound to data.rightArray
+		        GO(go.Panel, "Vertical",
+		            new go.Binding("itemArray", "rightArray"), {
+		                row: 1,
+		                column: 2,
+		                itemTemplate: GO(go.Panel, {
+		                            _side: "right",
+		                            fromSpot: go.Spot.Right,
+		                            toSpot: go.Spot.Right,
+		                            fromLinkable: true,
+		                            toLinkable: true,
+		                            cursor: "pointer"
+		                        },
+		                        new go.Binding("portId", "portId"),
+		                        GO(go.Shape, "Rectangle", {
+		                                stroke: null,
+		                                strokeWidth: 0,
+		                                desiredSize: portSize,
+		                                margin: new go.Margin(1, 0)
+		                            },
+		                            new go.Binding("fill", "portColor"))
+		                    ) // end itemTemplate
+		            }
+		        ) // end Vertical Panel
+
+		    );
+		}
+
+		//group also has a layout
+		function getLayout() {
+		    return GO(go.LayeredDigraphLayout, {
+		        direction: 0,
+		        layerSpacing: 25,
+		        columnSpacing: 25,
+		        cycleRemoveOption: go.LayeredDigraphLayout.CycleDepthFirst,
+		        layeringOption: go.LayeredDigraphLayout.LayerOptimalLinkLength,
+		        initializeOption: go.LayeredDigraphLayout.InitDepthFirstOut,
+		        aggressiveOption: go.LayeredDigraphLayout.AggressiveLess,
+		        packOption: go.LayeredDigraphLayout.PackAll,
+		        setsPortSpots: true
+		    });
+		}
+
+		function getGroupLayout() {
+		    return getLayout();
+		}
+		
+		function setListeners(diagram){
+			diagram.addDiagramListener("AnimationFinished",function(e){
+				if(isFirstAnimation){
+					isFirstAnimation = false;
+					ProcessView.onProcessViewReady();
+				}
+			});		
+		}
+
+		function doDiagram(dtString) {
+		    var layout = getLayout();
+		    myDiagram = GO(go.Diagram, "d_graphics", {
+		        initialContentAlignment: go.Spot.Center,
+		        initialAutoScale: go.Diagram.UniformToFill,
+		        layout: layout
+		    });
+
+		    doTemplate(myDiagram);
+		    doLinkTemplate(myDiagram);
+		    doGroupTemplate(myDiagram);
+		    console.log('templates done');
+			
+			setListeners(myDiagram);
+			console.log('listeners set');
+
+		    var ob = eval(dtString);
+
+		    console.log('models parsed');
+
+		    myDiagram.model = GO(go.GraphLinksModel, ob);
+
+		    console.log('diagram set');
+		}
+	</script>
+		<!-- whole screen, standard backgroundColor is #DAE4E4 -->
+	    <style>
+			html, body {
+				height: 100%;
+				margin: 0;
+			}
+			#d_graphics {
+				min-height: 100%; 
+				background-color: #DAE4E4;
+			}
+		</style>
+</head>
+
+<body>
+
+<div id="d_graphics">
+</div>
+
+</body>
+</html>

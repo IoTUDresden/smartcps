@@ -1,0 +1,26 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent">
+
+ <PreferenceCategory
+   android:summary="IP settings for semiwa and processes"
+   android:title="@string/services_summary" >
+   
+    <EditTextPreference
+    	 android:key="prefSemiwa"
+    	 android:summary="Click here to change semiwa ip"
+    	 android:title="@string/settings_services_semiwa_title"
+    	 android:defaultValue ="141.76.68.192:8098" />
+  	<EditTextPreference
+   		 android:key="prefProcess"
+    	 android:summary="Click here to change processes ip"
+   		 android:title="@string/settings_services_process_title"
+   		 android:defaultValue ="192.168.56.1:8081"/>
+  	<EditTextPreference
+   		 android:key="prefMap"
+    	 android:summary="Click here to change map server ip"
+   		 android:title="@string/settings_services_map_title"
+   		 android:defaultValue ="192.168.1.4:8081"/>
+ </PreferenceCategory>
+
+</PreferenceScreen>

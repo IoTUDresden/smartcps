@@ -1,0 +1,83 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 18
+    buildToolsVersion "24.0.2"
+    defaultConfig {
+        applicationId "eu.vicci.ecosystem.standalone.controlcenter.android"
+        minSdkVersion 16
+        targetSdkVersion 18
+
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+    // TODO clean this up. Better dependency organization needed
+    packagingOptions {
+        // excluding files, which causes duplicate exception and are not needed
+        exclude 'META-INF/INDEX.LIST'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/eclipse.inf'
+        exclude 'META-INF/ECLIPSE_.RSA'
+        exclude 'META-INF/ECLIPSE_.SF'
+        exclude 'Readme.txt'
+        exclude 'pom.xml'
+        exclude 'about.html'
+        exclude 'about.ini'
+        exclude 'about.mappings'
+        exclude 'about.properties'
+        exclude 'modeling32.png'
+        exclude 'plugin.properties'
+        exclude 'plugin.xml'
+
+        // some files included in more than one imported jar, so we just take the first
+        pickFirst 'libs/dom4j-1.6.1.jar'
+        pickFirst 'libs/gson-2.2.4.jar'
+        pickFirst 'model/Ecore.ecore'
+        pickFirst 'libs/java_websocket.jar'
+        pickFirst 'schema/factory_override.exsd'
+        pickFirst 'libs/hibernate-jpa-2.1-api-1.0.0.Final.jar'
+        pickFirst 'schema/package_registry_implementation.exsd'
+        pickFirst 'model/Ecore.genmodel'
+        pickFirst 'maven_libs/jackson-annotations-2.4.0.jar'
+        pickFirst 'hibernate.cfg.xml'
+        pickFirst 'META-INF/ASL2.0'
+        pickFirst 'META-INF/io.netty.versions.properties'
+
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+    productFlavors {
+    }
+}
+
+repositories {
+    maven { url 'http://clojars.org/repo' }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+
+    compile "com.android.support:multidex:1.0.1"
+    compile project(':AndroidNavigation')
+    compile project(':melissa_library')
+    compile project(':ProcessViewAndroid')
+    compile project(':ControlcenterAndroid')
+    compile project(':SystemApp')
+
+    compile 'org.java-websocket:java-websocket:1.3.1'
+    compile 'ws.wamp.jawampa:jawampa-netty:0.4.2'
+
+    // https://mvnrepository.com/artifact/org.eclipse.emf/
+    compile 'org.eclipse.emf:org.eclipse.emf.ecore:2.8.3.v20130125-0546'
+    compile 'org.eclipse.emf:org.eclipse.emf.common:2.8.0.v20130125-0546'
+    compile 'org.eclipse.emf:org.eclipse.emf.ecore.xmi:2.8.0-v20120911-0500'
+
+
+}

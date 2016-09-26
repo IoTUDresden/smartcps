@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/robo_view_fragment_add_map_dialog"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+	<!-- input fielt for the name of the robot -->
+    <LinearLayout
+       android:layout_width="fill_parent" 
+       android:layout_height="wrap_content" 
+       android:orientation="horizontal"
+       android:layout_marginLeft="10dp"
+       android:layout_marginRight="10dp"
+	   android:layout_marginTop="10dp">
+    
+	    <TextView
+	        android:text="@string/add_item_dialog_name"
+	        android:layout_width="80dp"
+	    	android:layout_height="wrap_content"
+			android:textSize="20sp">
+	    </TextView> 
+	    <EditText
+	        android:id="@+id/map_name"
+	        android:text="@string/add_map_dialog_default_name"
+	        android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content"
+			android:textSize="20sp"
+			android:inputType="text"
+			android:maxLength="20">
+	    </EditText> 
+	</LinearLayout>
+	
+    <!-- textview shown when duplicate name is entered -->
+    <TextView
+        android:id="@+id/duplicate_map_name"
+        android:text="@string/duplicate_name_message"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:visibility="gone"
+		android:textSize="15sp">
+	</TextView> 
+    
+	<!-- input field for the source path of the map -->
+    <LinearLayout
+       android:layout_width="fill_parent" 
+       android:layout_height="wrap_content" 
+       android:orientation="horizontal"
+       android:layout_marginLeft="10dp"
+       android:layout_marginRight="10dp"
+	   android:layout_marginTop="10dp">
+    
+	    <TextView
+	        android:text="@string/add_map_dialog_source"
+	        android:layout_width="80dp"
+	    	android:layout_height="wrap_content"
+			android:textSize="20sp">
+	    </TextView> 
+	    <EditText
+	        android:id="@+id/map_source"
+	        android:text="@string/add_map_dialog_default_source"
+	        android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content"
+			android:textSize="20sp"
+			android:inputType="number">
+	    </EditText> 
+	</LinearLayout> 
+	
+    <!-- input fielt for the ip of the map server -->
+    <LinearLayout
+       android:layout_width="fill_parent" 
+       android:layout_height="wrap_content" 
+       android:orientation="horizontal"
+       android:layout_marginLeft="10dp"
+       android:layout_marginRight="10dp"
+	   android:layout_marginTop="10dp">
+    
+	    <TextView
+	        android:text="@string/add_map_dialog_ip"
+	        android:layout_width="80dp"
+	    	android:layout_height="wrap_content"
+			android:textSize="20sp">
+	    </TextView> 
+	    <EditText
+	        android:id="@+id/add_map_instance_ip"
+	        android:text="@string/add_map_dialog_default_ip"
+	        android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content"
+			android:textSize="20sp"
+			android:inputType="number">
+	    </EditText> 
+	</LinearLayout> 
+	
+   	<!-- input fielt for the port of the map server -->
+    <LinearLayout
+       android:layout_width="fill_parent" 
+       android:layout_height="wrap_content" 
+       android:orientation="horizontal"
+       android:layout_marginLeft="10dp"
+       android:layout_marginRight="10dp"
+	   android:layout_marginTop="10dp">
+    
+	    <TextView
+	        android:text="@string/add_map_dialog_port"
+	        android:layout_width="80dp"
+	    	android:layout_height="wrap_content"
+			android:textSize="20sp">
+	    </TextView> 
+	    <EditText
+	        android:id="@+id/add_map_instance_port"
+	        android:text="@string/add_map_dialog_default_port"
+	        android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content"
+			android:textSize="20sp"
+			android:inputType="number">
+	    </EditText> 
+	</LinearLayout>  
+    
+</LinearLayout> 

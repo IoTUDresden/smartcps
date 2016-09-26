@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="vertical|none"
+    tools:context="eu.vicci.ecosystem.standalone.controlcenter.android.activities.DashboardDeviceDetailActivity" >
+
+    <LinearLayout
+        android:id="@+id/detail_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="vertical"
+        android:padding="@dimen/content_padding" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:baselineAligned="false"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/content_padding"
+                    android:text="@string/deviceDetail_deviceName" />
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/content_padding"
+                    android:text="@string/deviceDetail_deviceLocation" />
+
+                <TextView
+                    android:id="@+id/location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:baselineAligned="false"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/content_padding"
+                    android:text="@string/deviceDetail_deviceMaxValue" />
+
+                <TextView
+                    android:id="@+id/boundary_max_value"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/content_padding"
+                    android:text="@string/deviceDetail_deviceMinValue" />
+
+                <TextView
+                    android:id="@+id/boundary_min_value"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/content_padding"
+                    android:text="@string/deviceDetail_deviceIdealMax" />
+
+                <TextView
+                    android:id="@+id/ideal_max_value"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/content_padding"
+                    android:text="@string/deviceDetail_deviceIdealMin" />
+
+                <TextView
+                    android:id="@+id/ideal_min_value"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/sensor_view_map"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_marginTop="@dimen/content_padding" />
+
+        <FrameLayout
+            android:id="@+id/sensor_view_chart"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_marginTop="@dimen/content_padding" />
+    </LinearLayout>
+
+</ScrollView>

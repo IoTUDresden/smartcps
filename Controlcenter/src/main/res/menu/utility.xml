@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+   <item
+       android:id="@+id/menu_sort_group"
+       android:icon="?actionFilterDrawable"
+       android:showAsAction="ifRoom"
+       android:title="@string/action_filter_menuGroupName">
+     <menu>
+	<item
+		android:id="@+id/menu_sortAfterTemp"
+		android:icon="@drawable/action_filter_temp"
+		android:showAsAction="ifRoom"
+		android:title="@string/action_filter_sortTemp"/>
+    <item
+        android:id="@+id/menu_sortAfterLight"
+        android:icon="@drawable/action_filter_light"
+        android:showAsAction="ifRoom"
+        android:title="@string/action_filter_sortLight"/>
+    <item
+        android:id="@+id/menu_sortAfterTv"
+        android:icon="@drawable/action_filter_tv"
+        android:showAsAction="ifRoom"
+        android:title="@string/action_filter_tv"/>
+    <item
+        android:id="@+id/menu_sortAfterAll"
+        android:icon="@drawable/action_filter_all"
+        android:showAsAction="ifRoom"
+        android:title="@string/action_filter_all"/>
+    </menu>
+   </item>
+</menu>

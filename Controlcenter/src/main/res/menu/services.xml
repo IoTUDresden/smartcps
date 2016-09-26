@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+       android:id="@+id/menu_sort_group_services"
+       android:icon="?actionServerDrawable"
+       android:showAsAction="ifRoom"
+       android:title="@string/action_filter_menuGroupServicesName">
+    <menu>
+        <item
+            android:id="@+id/menu_services_semiwa"
+            android:icon="@android:drawable/ic_menu_rotate"
+            android:showAsAction="ifRoom"
+            android:title="@string/action_menu_services_semiwa"/>
+        <item
+            android:id="@+id/menu_services_processes"
+            android:icon="@android:drawable/ic_menu_rotate"
+            android:showAsAction="ifRoom"
+            android:title="@string/action_menu_services_process"/>
+        <item
+            android:id="@+id/menu_services_map"
+            android:icon="@android:drawable/ic_menu_rotate"
+            android:showAsAction="ifRoom"
+            android:title="@string/action_menu_services_map" android:enabled="false" android:checked="true" android:visible="true"/>
+        
+        <item android:id="@+id/menu_services_process_client" android:title="@string/action_menu_services_process_client" android:icon="@android:drawable/ic_menu_rotate"/><item
+            android:id="@+id/menu_services_unknown"
+            android:icon="@android:drawable/ic_menu_rotate"
+            android:showAsAction="ifRoom"
+            android:title="@string/action_menu_services_unknown"/>
+        
+    </menu>
+   </item>
+</menu>

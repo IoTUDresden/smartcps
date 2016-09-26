@@ -1,0 +1,6 @@
+include ':SystemApp'
+include ':Controlcenter'
+include ':ControlcenterAndroid'
+include ':ProcessViewAndroid'
+include ':AndroidNavigation'
+include ':melissa_library'

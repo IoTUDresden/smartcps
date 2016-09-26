@@ -1,0 +1,33 @@
+<preference-headers xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- These settings headers are only used on tablets. -->
+
+    <header
+        android:fragment="eu.vicci.ecosystem.standalone.controlcenter.android.activities.SettingsActivity$UIPreferenceFragment"
+        android:title="@string/settings_category_ui_title" />
+
+    <header
+        android:fragment="eu.vicci.ecosystem.standalone.controlcenter.android.activities.SettingsActivity$TutorialPreferenceFragment"
+        android:title="@string/settings_category_tutorial_title" />
+
+    <header
+        android:fragment="eu.vicci.ecosystem.standalone.controlcenter.android.activities.SettingsActivity$DevicesPreferenceFragment"
+        android:title="@string/settings_category_devices_title" />
+
+    <header
+        android:fragment="eu.vicci.ecosystem.standalone.controlcenter.android.activities.SettingsActivity$DevPreferenceFragment"
+        android:title="@string/settings_category_dev_title" />
+
+    <header
+        android:fragment="eu.vicci.ecosystem.standalone.controlcenter.android.activities.SettingsActivity$ServiceIpFragment"
+        android:title="@string/settings_category_services_title" />
+    
+    <header
+        android:fragment="eu.vicci.ecosystem.standalone.controlcenter.android.activities.SettingsActivity$RobotPreferenceFragment"
+        android:title="@string/settings_category_robot_title" />
+    
+    <header
+        android:fragment="eu.vicci.ecosystem.standalone.controlcenter.android.activities.SettingsActivity$UserSettingsPreferenceFragment"
+        android:title="@string/settings_category_usersettings_title" />
+
+</preference-headers>

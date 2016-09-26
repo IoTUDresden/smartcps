@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="value_ideal">Optimale Werte</string>
+    <string name="value_less">Zu niedrige Werte</string>
+    <string name="value_over">Zu hohe Werte</string>
+
+    <!-- Widgets -->
+    <string name="process_info_state">Status: </string>
+    <string name="process_info_type">Typ: </string>
+    
+    <string name="robot_info_ip">IP: </string>
+    <string name="robot_info_connected">Verbunden: </string>
+    <string name="robot_info_grabber">Greifer: </string>
+
+</resources>

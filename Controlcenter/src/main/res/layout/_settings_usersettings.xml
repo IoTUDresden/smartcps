@@ -1,0 +1,17 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <PreferenceCategory android:title="@string/usersettings_settings_profile_title" >
+
+        <eu.vicci.ecosystem.standalone.controlcenter.android.util.ActiveUserListPreference
+            android:defaultValue="Default"
+            android:entries="@array/usersettings_user_names"
+            android:entryValues="@array/usersettings_user_ids"
+            android:key="usersettings_active_user"
+            android:summary="%s"
+            android:title="@string/usersettings_settings_profile_title" />
+        
+    </PreferenceCategory>
+
+</PreferenceScreen>

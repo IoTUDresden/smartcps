@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/robo_view_fragment_add_poi_dialog"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+	
+	<!-- input field for the name of the poi -->
+    <LinearLayout
+       android:layout_width="fill_parent" 
+       android:layout_height="wrap_content" 
+       android:orientation="horizontal"
+       android:layout_marginLeft="10dp"
+       android:layout_marginRight="10dp"
+	   android:layout_marginTop="10dp">
+    
+	    <TextView
+	        android:text="@string/add_item_dialog_name"
+	        android:layout_width="130dp"
+	    	android:layout_height="wrap_content"
+
+			android:textSize="20sp">
+	    </TextView> 
+	    <EditText
+	        android:id="@+id/poi_name"
+	        android:text="@string/add_poi_dialog_default_name"
+	        android:layout_width="0dp"
+       		android:layout_weight=".50"
+	    	android:layout_height="wrap_content"
+			android:textSize="20sp"
+			android:inputType="text"
+			android:maxLength="20">
+	    </EditText>
+	    <!-- drop down list for choosing the type of the POI -->
+	    <Spinner
+    		android:id="@+id/poi_spinner"
+    		android:layout_width="0dp"
+    		android:layout_weight=".50"
+    		android:layout_height="wrap_content" /> 
+	</LinearLayout>
+	
+    <!-- textview shown when duplicate name is entered -->
+    <TextView
+        android:id="@+id/duplicate_poi_name"
+        android:text="@string/duplicate_name_message"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:visibility="gone"
+		android:textSize="15sp">
+	</TextView> 
+	
+    <!-- input field for the room of the poi -->
+    <!--
+    <LinearLayout
+       android:layout_width="fill_parent" 
+       android:layout_height="wrap_content" 
+       android:orientation="horizontal"
+       android:layout_marginLeft="10dp"
+       android:layout_marginRight="10dp"
+	   android:layout_marginTop="10dp">
+    
+	    <TextView
+	        android:text="@string/add_poi_dialog_room"
+	        android:layout_width="130dp"
+	    	android:layout_height="wrap_content"
+			android:textSize="20sp">
+	    </TextView> 
+	    <EditText
+	        android:id="@+id/poi_room"
+	        android:text="@string/add_poi_dialog_default_room"
+	        android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content"
+			android:textSize="20sp"
+			android:inputType="text">
+	    </EditText> 
+	</LinearLayout>  -->
+    
+	<!-- input field for the desciption of the poi -->
+    <LinearLayout
+       android:layout_width="fill_parent" 
+       android:layout_height="wrap_content" 
+       android:orientation="horizontal"
+       android:layout_marginLeft="10dp"
+       android:layout_marginRight="10dp"
+	   android:layout_marginTop="10dp">
+    
+	    <TextView
+	        android:text="@string/add_poi_dialog_description"
+	        android:layout_width="130dp"
+	    	android:layout_height="wrap_content"
+			android:textSize="20sp">
+	    </TextView> 
+	    <EditText
+	        android:id="@+id/poi_description"
+	        android:text="@string/add_poi_dialog_default_description"
+	        android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content"
+			android:textSize="20sp"
+			android:inputType="text">
+	    </EditText> 
+	</LinearLayout> 
+</LinearLayout> 

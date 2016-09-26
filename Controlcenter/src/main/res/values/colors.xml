@@ -1,0 +1,69 @@
+<resources>
+    
+    <color name="clBackgroundLight">#DDDDDD</color>
+
+	<color name="clTextLight">#000000</color>
+	<color name="clTextDark">#FFFFFF</color>
+	<color name="clLinkLight">#0000FF</color>
+	<color name="clLinkDark">#009DFF</color>
+	<color name="clShapeHeaderLight">#D2D2D2</color>
+	<color name="clShapeHeaderDark">#222</color>
+	<color name="clShapeBorderLight">#000000</color>
+	<color name="clShapeBorderDark">#404040</color>
+	<color name="clShapeBackgroundStartColorLight">#F0F0F0</color>
+	<color name="clShapeBackgroundEndColorLight">#FFFFFF</color>
+	<color name="clShapeBackgroundStartColorDark">#008000</color>
+	<color name="clShapeBackgroundEndColorDark">#7CFC00</color>
+	<color name="clText">#FF0000</color>
+	<color name="clBreadcrumbsDividerLight">#B7B7B7</color>
+	<color name="clBreadcrumbsDividerDark">#464646</color>
+
+    <!-- ActionBar Transparent Colors -->
+    <color name="clActionBarTransparentBackground">#000000ff</color>
+    <color name="clActionBarOverlayColor">#d9dab3ff</color>
+    
+    <!-- Single state device Colors -->
+    <color name="singlestate_device_value_yellow">#FFA500</color>
+    
+    <!-- Home Screen -->
+    <color name="buttonfocus">#f2edf2</color>
+    <color name="buttonpressed">#f2f2f2</color>
+    <color name="homescreen_background">#dcd8dc</color>
+    
+    <!-- Dashboard -->
+    <color name="clDashboardSingleGridStrokeDark">#000000</color>
+    <color name="clDashboardSingleGridStrokeLight">#B6B6B6</color>
+    <color name="clDashboardSingleGridBackDark">#4E4E4E</color>
+    <color name="clDashboardSingleGridBackLight">#FFFFFF</color>
+    <color name="clDashboardSingleGridHeaderLight">#36A9E1</color>
+    <color name="clDashboardSingleGridHeaderDark">#393939</color>
+    <color name="clDashboardSingleGridHeaderTextDark">#FFFFFF</color>
+    <color name="clDashboardSingleGridHeaderTextLight">#FFFFFF</color>
+    
+    <!-- Robots -->
+    <color name="background_dark_grey">#808080</color>
+    <color name="text_bright">#FFFFFF</color>
+    <color name="list_background_grey">#CCCCCC</color>
+    <color name="list_item_text_grey">#646464</color>
+     <color name="list_item_dividor_grey">#808080</color>
+     
+     <!-- Processes -->
+     <color name="green">#7dc247</color>
+    <color name="gray">#959393</color>
+    <color name="solid_green">#a3d01e</color>  
+    <color name="solid_white">#ffffff</color> 
+    <color name="blue">#33b5e5</color>
+    <color name="darkblue">#0099cc</color>
+    
+    <color name="transparent">#00000000</color>
+    <!-- card colors -->
+    <color name="card_background">#ffffff</color>
+    <color name="card_background_dark">#eeeeee</color>
+    <color name="card_background_marked">#FFFDC7</color>
+    <color name="card_background_marked2">#FFFEE3</color>
+    <color name="card_shadow_1">#d4d4d4</color>
+    <color name="card_shadow_2">#dddddd</color>
+    <color name="card_detailing">#eee</color>
+    
+    <color name="htc_button">#d3d3d3</color>
+</resources>

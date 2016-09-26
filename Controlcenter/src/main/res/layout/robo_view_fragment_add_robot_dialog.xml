@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/robo_view_fragment_add_robot_dialog"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+	<!-- input fielt for the name of the robot -->
+    <LinearLayout
+       android:layout_width="fill_parent" 
+       android:layout_height="wrap_content" 
+       android:orientation="horizontal"
+       android:layout_marginLeft="10dp"
+       android:layout_marginRight="10dp"
+	   android:layout_marginTop="10dp">
+    
+	    <TextView
+	        android:text="@string/add_item_dialog_name"
+	        android:layout_width="80dp"
+	    	android:layout_height="wrap_content"
+
+			android:textSize="20sp">
+	    </TextView> 
+	    <EditText
+	        android:id="@+id/add_robot_instance_name"
+	        android:text="@string/add_robot_dialog_default_name"
+	        android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content"
+			android:textSize="20sp"
+			android:inputType="text"
+			android:maxLength="15">
+	    </EditText> 
+	</LinearLayout>
+	
+    <!-- textview shown when duplicate name is entered -->
+    <TextView
+        android:id="@+id/duplicate_robot_name"
+        android:text="@string/duplicate_name_message"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:visibility="gone"
+		android:textSize="15sp">
+	</TextView> 
+	
+	<!-- input fielt for the ip of the robot -->
+    <LinearLayout
+       android:layout_width="fill_parent" 
+       android:layout_height="wrap_content" 
+       android:orientation="horizontal"
+       android:layout_marginLeft="10dp"
+       android:layout_marginRight="10dp"
+	   android:layout_marginTop="10dp">
+    
+	    <TextView
+	        android:text="@string/add_robot_dialog_ip"
+	        android:layout_width="80dp"
+	    	android:layout_height="wrap_content"
+			android:textSize="20sp">
+	    </TextView> 
+	    <EditText
+	        android:id="@+id/add_robot_instance_ip"
+	        android:text="@string/add_robot_dialog_default_ip"
+	        android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content"
+			android:textSize="20sp"
+			android:inputType="number">
+	    </EditText> 
+	</LinearLayout> 
+	
+   	<!-- input fielt for the port of the robot -->
+    <LinearLayout
+       android:layout_width="fill_parent" 
+       android:layout_height="wrap_content" 
+       android:orientation="horizontal"
+       android:layout_marginLeft="10dp"
+       android:layout_marginRight="10dp"
+	   android:layout_marginTop="10dp">
+    
+	    <TextView
+	        android:text="@string/add_robot_dialog_port"
+	        android:layout_width="80dp"
+	    	android:layout_height="wrap_content"
+			android:textSize="20sp">
+	    </TextView> 
+	    <EditText
+	        android:id="@+id/add_robot_instance_port"
+	        android:text="@string/add_robot_dialog_default_port"
+	        android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content"
+			android:textSize="20sp"
+			android:inputType="number">
+	    </EditText> 
+	</LinearLayout>  
+	
+    <!-- checkbox for the type of the robot -->
+	<RadioGroup
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:layout_marginLeft="10dp"
+		android:layout_marginTop="10dp">
+		<RadioButton
+	        android:id="@+id/addRobot_checkbox_turtle"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/add_robot_dialog_type_turtle"
+	        android:checked="true" />
+		<RadioButton
+	        android:id="@+id/addRobot_checkbox_nao"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="40dp"
+	        android:text="@string/add_robot_dialog_type_nao"
+
+	        android:checked="false" />
+		<RadioButton
+	        android:id="@+id/addRobot_checkbox_you"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="40dp"
+	        android:text="@string/add_robot_dialog_type_you"
+	        android:checked="false" />
+    </RadioGroup>
+</LinearLayout> 

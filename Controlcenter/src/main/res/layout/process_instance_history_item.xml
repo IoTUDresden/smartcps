@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_frame"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="true"
+    android:background="@drawable/card_focused"
+    android:descendantFocusability="blocksDescendants" >
+
+    <TextView
+        android:id="@+id/label_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:padding="5dp"
+        android:text="@string/status"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/process_instance_history_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/label_status"
+        android:layout_alignBottom="@+id/label_status"
+        android:layout_toRightOf="@+id/label_status"
+        android:padding="5dp"
+        android:text="status"
+        android:textColor="@color/blue" 
+		android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/process_instance_history_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/label_status"
+        android:layout_below="@+id/label_status"
+        android:lines="2"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:text="time"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <ScrollView 
+        android:orientation="vertical"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/process_instance_history_time"
+        >
+        <LinearLayout 
+            android:orientation="vertical"
+            android:id="@+id/process_instance_history_port_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+        ></LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

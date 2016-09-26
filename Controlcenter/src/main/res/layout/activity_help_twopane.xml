@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:divider="?android:attr/dividerHorizontal"
+    android:orientation="horizontal"
+    android:paddingTop="?android:attr/actionBarSize"
+    android:showDividers="middle"
+    tools:context=".HelpListActivity" >
+
+    <!--
+    This layout is a two-pane layout for the Helps
+    master/detail flow. See res/values-large/refs.xml and
+    res/values-sw600dp/refs.xml for an example of layout aliases
+    that replace the single-pane version of the layout with
+    this two-pane version.
+
+    For more on layout aliases, see:
+    http://developer.android.com/training/multiscreen/screensizes.html#TaskUseAliasFilters
+    -->
+
+    <LinearLayout
+        android:id="@+id/help_list_linearlayout"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_margin="20dp"
+        android:background="@drawable/background_notebook"
+        android:alpha="200"
+        android:orientation="vertical"
+        android:clickable="true" >
+
+        <fragment
+            android:id="@+id/help_list"
+            android:name="eu.vicci.ecosystem.standalone.controlcenter.android.fragments.HelpListFragment"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            tools:layout="@android:layout/list_content" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/help_detail_container"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3" />
+
+</LinearLayout>

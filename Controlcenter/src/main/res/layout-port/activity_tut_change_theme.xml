@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/tutChangeTheme_relativeLayoutRoot"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:paddingLeft="@dimen/paddingNormal"
+	android:paddingRight="@dimen/paddingNormal">
+
+	<TextView
+		android:id="@+id/tutChangeTheme_txtNormal1"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerHorizontal="true"
+		android:layout_marginTop="@dimen/marginNormal"
+		android:gravity="center_horizontal"
+		android:text="@string/tutChangeTheme_txtNormal1"
+		android:textSize="@dimen/tsNormal"/>
+
+	<LinearLayout
+		android:id="@+id/tutChangeTheme_linearLayoutThemes"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/tutChangeTheme_txtNormal1"
+		android:gravity="center_horizontal"
+		android:orientation="vertical"
+		android:layout_centerHorizontal="true"
+		android:layout_marginTop="@dimen/marginLarge">
+
+		<ToggleButton
+			android:id="@+id/tutChangeTheme_tglLight"
+			style="@style/btn"
+			android:layout_marginRight="@dimen/marginNormal"
+			android:checked="true"
+			android:text="@string/tutChangeTheme_tglLight"
+			android:textOff="@string/tutChangeTheme_tglLight"
+			android:textOn="@string/tutChangeTheme_tglLight"
+			android:textSize="@dimen/tsNormal"/>
+
+		<ToggleButton
+			android:id="@+id/tutChangeTheme_tglDark"
+			style="@style/btn"
+			android:layout_marginRight="@dimen/marginNormal"
+			android:text="@string/tutChangeTheme_tglDark"
+			android:textOff="@string/tutChangeTheme_tglDark"
+			android:textOn="@string/tutChangeTheme_tglDark"
+			android:textSize="@dimen/tsNormal"/>
+	</LinearLayout>
+
+	<include
+		android:id="@+id/btnNext"
+		layout="@layout/_btn_next"/>
+	
+	<include
+		android:id="@+id/btnClose"
+		layout="@layout/_btn_close"/>
+
+</RelativeLayout>

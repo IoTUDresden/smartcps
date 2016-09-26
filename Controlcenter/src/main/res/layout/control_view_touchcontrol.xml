@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      android:id="@+id/joystick_layout"
+    android:layout_width="320dp"
+    android:layout_height="180dp"
+    android:orientation="vertical" >
+
+  <!--    <TextView
+        android:id="@+id/battery_state_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="15dp"
+        android:text="@string/battery_state_text" />
+
+    <TextView
+        android:id="@+id/battery_state_valuetv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/battery_state_textview"
+        android:layout_alignBottom="@+id/battery_state_textview"
+        android:layout_marginLeft="17dp"
+        android:layout_toRightOf="@+id/battery_state_textview"
+        android:text="@string/robot_battery_noinfo" />
+        -->
+
+
+</RelativeLayout>

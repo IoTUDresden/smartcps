@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:background="@drawable/shape_dark"
+	android:padding="@dimen/paddingToast"
+	android:layout_alignParentBottom="true"
+	android:layout_centerInParent="true"
+	android:layout_marginBottom="@dimen/marginToast">
+
+	<TextView
+		android:id="@+id/transient_notification_text"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:layout_weight="1"
+		android:drawablePadding="8dp"
+		android:shadowColor="#BB000000"
+		android:shadowRadius="2.75"
+		android:textAppearance="@dimen/tsToast"
+		android:textColor="@color/clTextDark"
+		android:gravity="center_horizontal"/>
+
+</LinearLayout>

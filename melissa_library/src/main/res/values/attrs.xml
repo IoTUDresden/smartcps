@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="PieChart">
+        <attr name="melissa_autoCenterPointerInSlice" format="boolean"/>
+        <attr name="melissa_highlightStrength" format="float"/>
+        <attr name="melissa_labelColor" format="color"/>
+        <attr name="melissa_labelHeight" format="dimension"/>
+        <attr name="melissa_labelPosition" format="enum">
+            <enum name="left" value="0"/>
+            <enum name="right" value="1"/>
+        </attr>
+        <attr name="melissa_labelWidth" format="dimension"/>
+        <attr name="melissa_labelY" format="dimension"/>
+        <attr name="melissa_pieRotation" format="integer"/>
+        <attr name="melissa_pointerRadius" format="dimension"/>
+        <attr name="melissa_showText" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="PercentageGauge">
+        <attr name="melissa_foregroundColor" format="color" />
+        <attr name="melissa_backgroundColor" format="color" />
+        <attr name="melissa_idealColor" format="color" />
+        <attr name="melissa_idealBegin" format="integer" />
+        <attr name="melissa_idealEnd" format="integer" />
+        <attr name="melissa_showIdeal" format="boolean" />
+        <attr name="melissa_textColor" format="color" />
+    </declare-styleable>
+
+</resources>

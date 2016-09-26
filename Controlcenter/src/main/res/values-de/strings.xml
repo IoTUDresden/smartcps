@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- General terms -->
+    <string name="appName">smartCPS</string>
+    <string name="menuSettings">Einstellungen</string>
+    <string name="menuHelp">Hilfe</string>
+    <string name="menuFloor">Grundriss</string>
+    <string name="menuProcess">Prozessverwaltung</string>
+    <string name="menuAppdashboard">Apps</string>
+    <string name="btnNext">Weiter »</string>
+    <string name="btnFinish">Fertigstellen</string>
+    <string name="btnOk">OK</string>
+    <string name="btnYes">Ja</string>
+    <string name="btnNo">Nein</string>
+    <string name="btnClose">Schließen</string>
+    <string name="descriptionLogo">Logo</string>
+    <string name="executeService">Dienst ausführen</string>
+    <string name="noDevices">Es wurden keine Geräte hinzugefügt. Bitte fügen Sie über die Einstellungen (oben rechts) verfügbare Geräte hinzu.</string>
+    <string name="noDevices_Children">Es wurden keine Geräte hinzugefügt. Du kannst über die Einstellungen (oben rechts) welche hinzufügen.</string>
+    <string name="currentStep">Schritt %1$s von %2$s</string>
+    <string name="choose">Auswählen</string>
+    <string name="notImplementedYet">Nicht implementiert, da nicht notwendig für Konzeptdemonstration</string>
+
+    <!-- Help -->
+    <string name="help_reminderToast">Sie kommen nicht weiter? Die Hilfe-Funktion finden Sie am oberen rechten Bildschirmrand.&lt;br />&lt;br />Tippen Sie diese Nachricht lange an, um sie dauerhaft nicht mehr anzuzeigen.&lt;br />Tippen Sie sie kurz an, um sie temporär auszublenden.</string>
+    <string name="help_reminderToast_Children">Du kommst nicht weiter? Die Hilfe-Funktion findest du am oberen rechten Bildschirmrand.&lt;br />&lt;br />Tippe diese Nachricht lange an, um sie dauerhaft nicht mehr anzuzeigen.&lt;br />Tippe Sie sie kurz an, um sie erst einmal auszublenden.</string>
+    <string name="help_reminderStopDisplaying">Möchten Sie dauerhaft nicht mehr an die Hilfe-Funktion erinnert werden?</string>
+    <string name="help_reminderStopDisplaying_Children">Du möchtest dauerhaft nicht mehr an die Hilfe-Funktion erinnert werden?</string>
+    <string name="help_start_txtHeadline">Hilfe? Wir finden eine Lösung!</string>
+    <string name="help_start_txtNormal1">Willkommen bei der smartCPS-Hilfe, die sich dynamisch Ihren Bedürfnissen anpasst. Wählen Sie einfach das gewünschte Hilfethema auf der rechten Seite aus.</string>
+    <string name="help_whatIsSmartCPS_txtHeadline">Was ist smartCPS?</string>
+    <string name="help_whatIsSmartCPS_contentHtml">smartCPS ist eine &lt;a href=\"smartcps://Software\">Software&lt;/a>, mit der Sie bequem von &lt;a href=\"smartcps://Tablet\">Tablet&lt;/a> oder &lt;a href=\"smartcps://Smartphone\">Smartphone&lt;/a> all Ihre Geräte steuern können. Darüber hinaus passt sich smartCPS automatisch an Ihre Bedürfnisse an:&lt;br/>&lt;br/>Sind Sie ein eher technisch versierter Mensch oder benötigen Sie hin und wieder noch Hilfestellung? Oder sind Sie in Sehvermögen oder Motorik eingeschränkt? Dies und mehr wird von smartCPS berücksichtigt, damit Sie so einfach wie möglich damit umgehen können.</string>
+    <string name="help_whatIsSmartCPS_contentHtml_Children">smartCPS ist eine &lt;a href=\"smartcps://Software\">Software&lt;/a>, mit der du bequem von &lt;a href=\"smartcps://Tablet\">Tablet&lt;/a> oder &lt;a href=\"smartcps://Smartphone\">Smartphone&lt;/a> all deine Geräte steuern kannst. Außerdem passt sich smartCPS automatisch an dich und deine Bedürfnisse an:&lt;br/>&lt;br/>Bist du eher ein Technikfreak oder benötigst du hin und wieder noch Hilfestellung? Oder hast du Handicaps beim Sehen oder Tasten? Dies und mehr wird von smartCPS berücksichtigt, damit du so einfach wie möglich damit umgehen kannst.</string>
+    <string name="help_whatIsSwiping_txtHeadline">Was bedeutet \"über den Bildschirm wischen\"?</string>
+    <string name="help_whatIsSwiping_contentHtml">Im besten Wortsinn bedeutet "Wischen" (englisch auch \"swiping\") das Aufsetzen Ihres Fingers auf dem &lt;a href=\"smartcps://Touchscreen\">Touchscreen&lt;/a> und das anschließende Bewegen des aufgesetzten Fingers in eine beliebige Richtung. Es handelt sich also um eine Geste des Fingers.</string>
+    <string name="help_whatIsSwiping_contentHtml_Children">Im besten Wortsinn bedeutet "Wischen" (englisch auch \"swiping\") das Aufsetzen deines Fingers auf dem &lt;a href=\"smartcps://Touchscreen\">Touchscreen&lt;/a> und das anschließende Bewegen des aufgesetzten Fingers in irgendeine Richtung. Es handelt sich also um eine Geste des Fingers.</string>
+    <string name="help_whatIsLongClick_txtHeadline">Was bedeutet \"gedrückt halten\"?</string>
+    <string name="help_whatIsLongClick_contentHtml">Wenn ein Finger auf den &lt;a href=\"smartcps://Touchscreen\">Touchscreen&lt;/a> gelegt wird und dort verbleibt, also nicht wieder abgehoben wird (das wäre ein normales Antippen), spricht man vom \"gedrückt halten \".&lt;br />&lt;br />Sie können auch mehrere Finger &lt;strong>gleichzeitig&lt;/strong> gedrückt halten.</string>
+    <string name="help_whatIsLongClick_contentHtml_Children">Wenn ein Finger auf den &lt;a href=\"smartcps://Touchscreen\">Touchscreen&lt;/a> gelegt wird und dort auch bleibt, also nicht wieder abgehoben wird (das wäre ein normales Antippen), spricht man vom \"gedrückt halten \".&lt;br />&lt;br />Du kannst auch mehrere Finger &lt;strong>gleichzeitig&lt;/strong> gedrückt halten.</string>
+    <string name="help_howToProceed_txtHeadline">Wie komme ich zum nächsten Schritt?</string>
+    <string name="help_howToProceed_contentHtml">Tippen Sie entweder auf die Schaltfläche \"Weiter\" am unteren rechten Bildschirmrand oder wischen Sie schnell von rechts nach links über den Bildschirm.</string>
+    <string name="help_howToProceed_contentHtml_Children">Tippe entweder auf die Schaltfläche \"Weiter\" am unteren rechten Bildschirmrand oder wische schnell von rechts nach links über den Bildschirm.</string>
+    <string name="help_howToReturn_txtHeadline">Wie kehre ich zum letzten Schritt zurück?</string>
+    <string name="help_howToReturn_contentHtml">Tippen Sie entweder auf die \"Zurück\"-Schaltfläche am unteren linken Bildschirmrand oder wischen Sie schnell von links nach rechts über den Bildschirm.</string>
+    <string name="help_howToReturn_contentHtml_Children">Tippe entweder auf die \"Zurück\"-Schaltfläche am unteren linken Bildschirmrand oder wische schnell von links nach rechts über den Bildschirm.</string>
+    <string name="help_howDoesTheReelMenuWork_txtHeadline">Wie funktioniert ein Reel-Menü?</string>
+    <string name="help_howDoesTheReelMenuWork_contentHtml">Eine ausführliche Einführung zum Reel-Menü können Sie zu jeder Zeit über&lt;br />\"Einstellungen -> Einführung\" erhalten. Die \"Einstellungen\"-Schaltfläche finden Sie am oberen rechten Bildschirmrand.</string>
+    <string name="help_howDoesTheReelMenuWork_contentHtml_Children">Eine ausführliche Einführung zum Reel-Menü kannst du zu jeder Zeit über&lt;br />\"Einstellungen -> Einführung\" erhalten. Die \"Einstellungen\"-Schaltfläche findest du am oberen rechten Bildschirmrand.</string>
+    <string name="help_howDoIControlADevice_txtHeadline">Wie steuere ich ein Gerät?</string>
+    <string name="help_howDoIControlADevice_contentHtml">Halten Sie einfach Ihren Finger auf einem Gerät gedrückt, dann öffnet sich ein Menü, mit dem Sie das Gerät steuern können.</string>
+    <string name="help_howDoIControlADevice_contentHtml_Children">Halte einfach deinen Finger auf einem Gerät gedrückt, dann öffnet sich ein Menü, mit dem du das Gerät steuern kannst.</string>
+    <string name="help_howDoIMoveADevice_txtHeadline">Wie verschiebe ich ein Gerät?</string>
+    <string name="help_howDoIMoveADevice_contentHtml">Halten Sie zwei Finger auf einem Gerät gedrückt. Nach einem kurzen Moment können sie es dann verschieben.</string>
+    <string name="help_howDoIMoveADevice_contentHtml_Children">Halte zwei Finger auf einem Gerät gedrückt. Nach einem kurzen Moment kannst du es dann verschieben.</string>
+
+    <!-- Tutorial (Welcome) -->
+    <string name="tutWelcome_txtHeadline">Herzlich willkommen.</string>
+    <string name="tutWelcome_txtNormal1">&lt;b>Bitte hören Sie nicht auf, zu lesen!&lt;/b> Bevor Sie loslegen können, sollten Sie sich mit der Bedienung von smartCPS vertraut machen.</string>
+    <string name="tutWelcome_txtNormal2">Um fortzufahren, tippen Sie auf &lt;b>\"Weiter\"&lt;/b> oder &lt;b>wischen Sie schnell von rechts nach links&lt;/b> über den Bildschirm. Falls Sie &lt;b>Hilfe&lt;/b> beim aktuellen Dialogschritt benötigen, tippen Sie auf das &lt;b>Hilfe-Symbol am oberen rechten Bildschirmrand&lt;/b> oder &lt;b>zeichnen Sie mit Ihrem Finger einen Kreis&lt;/b> auf den Bildschirm.</string>
+
+    <!-- Tutorial (User Evaluation) -->
+    <string name="tutEvaluation_txtNormal1">Damit sich smartCPS an Ihre persönlichen Eigenschaften und Präferenzen anpassen kann, werden einige Daten zu Ihrer Person benötigt:</string>
+
+    <!-- Age -->
+    <string name="tutEvaluation_txtAge">Wie alt sind Sie?</string>
+
+    <!-- Technical skills -->
+    <string name="tutEvaluation_txtTechnicalSkills">Sind Sie geübt im Umgang mit Technik im Allgemeinen und Smartphones/Tablets im Besonderen? Würden Sie sich als eher technisch versiert bezeichnen?</string>
+
+    <string-array name="tutEvaluation_spnTechnicalSkillsChoices">
+        <item>Eher wenig technisch versiert</item>
+        <item>Eher technisch versiert</item>
+    </string-array>
+
+    <!-- Handicaps -->
+    <string name="tutEvaluation_txtHandicaps">Sind Sie in einer der folgenden Arten eingeschränkt?</string>
+    <string name="tutEvaluation_tglHandicapsMemory">Gedächtnis</string>
+    <string name="tutEvaluation_tglHandicapsSight">Sehvermögen</string>
+    <string name="tutEvaluation_tglHandicapsMotorSkills">Motorik</string>
+
+    <!-- Tutorial (Change Theme) -->
+    <string name="tutChangeTheme_txtNormal1">smartCPS bietet Ihnen zwei Farbschemata (Themes) an. Bitte wählen Sie eines aus und bestätigen mit \"Weiter\".</string>
+    <string name="tutChangeTheme_txtNormal1_Children">Du kannst smartCPS in zwei Farben anzeigen. Bitte wählen eine aus und bestätige mit \"Weiter\".</string>
+    <string name="tutChangeTheme_tglLight">Helles Farbschema</string>
+    <string name="tutChangeTheme_tglDark">Dunkles Farbschema</string>
+
+    <!-- Tutorial (Control) -->
+    <string name="tutControl_txtNormal1">In diesem Schritt erfahren Sie, wie Sie mit smartCPS Ihre Geräte steuern können:</string>
+    <string name="tutControl_txtNormal1_Children">Wie man mit smartCPS Geräte steuert? Hier erfährst du es!</string>
+    <string name="tutControl_txtStep1">Jedes Ihrer &lt;b>Geräte&lt;/b> wird durch eine solche Box dargestellt. Ein Gerät hat dabei verschiedene &lt;b>Zustände&lt;/b> (z.B. \"Eingeschaltet\" oder \"Stumm\""), die Sie durch die Ausführung von &lt;b>Diensten&lt;/b> steuern können. Der letzte von Ihnen ausgeführte Dienst erscheint in der &lt;b>letzten Zeile&lt;/b> der Box.&lt;br/>&lt;br/>Wischen Sie auf der Grafik von rechts nach links, um zum nächsten Schritt zu gelangen.</string>
+    <string name="tutControl_txtStep1_Children">Jedes der &lt;b>Geräte&lt;/b> wird durch eine solche Box dargestellt. Ein Gerät hat dabei verschiedene &lt;b>Zustände&lt;/b> (z.B. \"Eingeschaltet\" oder \"Stumm\""), die du durch die Ausführung von &lt;b>Diensten&lt;/b> steuern kannst. Der letzte von dir ausgeführte Dienst erscheint in der &lt;b>letzten Zeile&lt;/b> der Box.&lt;br/>&lt;br/>Wische auf der Grafik von rechts nach links, um zum nächsten Schritt zu gelangen.</string>
+    <string name="tutControl_txtStep2">&lt;b>Halten&lt;/b> Sie den Finger auf einem solchen Gerät &lt;b>gedrückt&lt;/b>, öffnet sich ein &lt;b>Menü&lt;/b>, über das Sie alle verfügbaren Dienste ausführen können.</string>
+    <string name="tutControl_txtStep2_Children">&lt;b>Hältst&lt;/b> du den Finger auf einem Gerät &lt;b>gedrückt&lt;/b>, öffnet sich ein &lt;b>Menü&lt;/b>, über das du alle verfügbaren Dienste ausführen kannst (z.B. den Fernseher einschalten).</string>
+    <string name="tutControl_txtStep3">Halten Sie &lt;b>zwei Finger gleichzeitig&lt;/b> auf einem Gerät gedrückt, können Sie es anschließend &lt;b>verschieben&lt;/b>. So können Sie sich Ihre Geräte anordnen, wie Sie möchten.</string>
+    <string name="tutControl_txtStep3_Children">Hältst du &lt;b>zwei Finger gleichzeitig&lt;/b> auf einem Gerät gedrückt, kannst du es anschließend &lt;b>verschieben&lt;/b>. So kannst du dir deine Geräte anordnen, wie du möchtest.</string>
+    <string name="tutControl_hint">Sie haben noch nicht alle Schritte der Einführung zur Bedienung Ihrer Geräte gelesen. Wischen Sie von rechts nach links über die Grafik, um zur nächsten zu gelangen.\nUm trotzdem fortzufahren, tippen Sie auf \"Weiter\".</string>
+    <string name="tutControl_hint_Children">Du hast noch nicht alle Schritte der Einführung zur Bedienung der Geräte gelesen. Wische von rechts nach links über die Grafik, um zur nächsten zu gelangen.\nFalls du diese Einführung nicht brauchst, tippe einfach auf \"Weiter\".</string>
+
+    <!-- Tutorial (Ready) -->
+    <string name="tutReady_txtHeadline">Los geht\'s!</string>
+    <string name="tutReady_txtNormal1">Sie haben die Einführung abgeschlossen und können nun Ihre ersten Geräte steuern!&lt;br/>&lt;br/>Auf Grund Ihrer Eingaben wurden einige Anpassungen an smartCPS vorgenommen. Sie können diese Anpassungen &lt;b>jederzeit in den Einstellungen widerrufen&lt;/b>!</string>
+    <string name="tutReady_txtNormal1_Children">Du hast gerade die Einführung abgeschlossen!&lt;br/>&lt;br/>Entsprechend der Angaben, die du während dieser Einführung gemacht hast, wurden einige Anpassungen an smartCPS vorgenommen. Du kannst diese Anpassungen &lt;b>jederzeit in den Einstellungen ändern&lt;/b>!</string>
+
+    <!-- New Devices -->
+    <string name="addNewDevices_txtNormal1">Es wurden &lt;b>neue Geräte gefunden&lt;/b>. Möchten Sie sie zu smartCPS hinzufügen?&lt;br/>Sie können dies auch später über die &lt;b>Einstellungen&lt;/b> nachholen.</string>
+    <string name="addNewDevices_txtNormal1_Children">Es wurden neue Geräte gefunden. Möchtest du sie zu smartCPS hinzufügen?&lt;br/>Das kannst du auch später über die &lt;b>Einstellungen&lt;/b> nachholen!</string>
+    <string name="addNewDevices_btnAddAll">Alle Geräte hinzufügen</string>
+    <string name="addNewDevices_btnAddSome">Geräte auswählen</string>
+    <string name="addNewDevices_btnAddNone">Keine Geräte hinzufügen</string>
+
+    <!-- Home -->
+    <string name="home_txtWheather">8°C, bewölkt</string>
+    <string name="home_txtLocation">Dresden</string>
+    <string name="home_btnControlApps">Apps</string>
+    <string name="home_btnControlFloor">Grundriss</string>
+    <string name="home_txtActiveDevices">Main menu</string>
+
+    <!-- Add New Service -->
+    <string name="addNewService_txtNormal1">Bitte geben Sie die untenstehenden Informationen ein, damit der neue Dienst hinzugefügt werden kann.</string>
+    <string name="addNewService_txtNormal1_Children">Bitte fülle die unteren Felder aus, damit der neue Dienst hinzugefügt werden kann.</string>
+    <string name="addNewService_btnAdd">Hinzufügen</string>
+    <string name="addNewService_stepDescription1">Der &lt;b>Dienstname&lt;/b> (z. B. \"Einschalten\" oder \"Lauter\") bezeichnet den Dienst, den Sie gerade hinzufügen. Markieren Sie den Dienst als &lt;b>Favoriten&lt;/b>, wenn Sie möchten, dass er im Menü zur Gerätesteuerung weiter oben steht.</string>
+    <string name="addNewService_stepDescription1_Children">Der &lt;b>Dienstname&lt;/b> (z. B. \"Einschalten\" oder \"Lauter\") ist die Bezeichnung des Dienstes, den du gerade hinzufügst. Wenn du den Dienst als &lt;b>Favoriten&lt;/b> markierst, steht er im Menü zur Gerätesteuerung weiter oben.</string>
+    <string name="addNewService_txtName">Dienstname:</string>
+    <string name="addNewService_txtFavorite">Favorit?</string>
+    <string name="addNewService_stepDescription2">Wählen Sie zunächst das &lt;b>Gerät&lt;/b> aus, dessen Zustand Sie mit dem Dienst verändern möchten. Das ist normalerweise das Gerät, dem der Dienst zugewiesen wird.&lt;br />&lt;br />Der &lt;b>Effekt&lt;/b> tritt ein, wenn der Dienst, den Sie gerade erstellen, ausgeführt wird. Normalerweise wird durch einen Dienst der Zustand eines Geräts verändert. So kann bspw. ein Fernseher auf "Aus" gestellt werden.</string>
+    <string name="addNewService_stepDescription2_Children">Wähle erst das &lt;b>Gerät&lt;/b> aus, dessen Zustand du mit dem Dienst verändern möchtest. Das ist normalerweise das Gerät, dem der Dienst zugewiesen wird.&lt;br />&lt;br />Der &lt;b>Effekt&lt;/b> tritt ein, wenn der Dienst, den du gerade erstellst, ausgeführt wird. Normalerweise wird durch einen Dienst der Zustand eines Geräts verändert. So kann bspw. ein Fernseher auf "Aus" gestellt werden.</string>
+    <string name="addNewService_txtDevice">Gerät:</string>
+    <string name="addNewService_rlmDeviceGroupName">Geräte</string>
+
+    <string-array name="addNewService_spnDeviceChoices">
+        <item>Fernseher</item>
+        <item>Kühlschrank</item>
+        <item>Lampe</item>
+        <item>Computer</item>
+        <item>Wecker</item>
+        <item>Ofen</item>
+    </string-array>
+
+    <string name="addNewService_txtEffect">Effekt:</string>
+    <string name="addNewService_rlmEffectGroupName">Effekte</string>
+
+    <string-array name="addNewService_spnEffectChoices">
+        <item>Gerätezustand ändern</item>
+        <item>Sinnvoller Effekt1</item>
+        <item>Sinnvoller Effekt2</item>
+        <item>Sinnvoller Effekt3</item>
+        <item>Sinnvoller Effekt4</item>
+        <item>Sinnvoller Effekt5</item>
+    </string-array>
+
+    <string name="addNewService_stepDescription3">Wählen Sie nun den &lt;b>Gerätezustand&lt;/b> aus, der verändert werden soll. Anschließend müssen Sie festlegen, auf welchen &lt;b>Wert&lt;/b> er verändert wird.</string>
+    <string name="addNewService_stepDescription3_Children">Wähle jetzt den &lt;b>Gerätezustand&lt;/b> aus, den du mit dem Dienst verändern willst. Anschließend musst du festlegen, auf welchen &lt;b>Wert&lt;/b> er verändert wird.</string>
+    <string name="addNewService_txtState">Gerätezustand:</string>
+    <string name="addNewService_rlmStateGroupName">Gerätezustände</string>
+
+    <string-array name="addNewService_spnStateChoices">
+        <item>Ein/Aus</item>
+        <item>Sender</item>
+        <item>Lautstärke</item>
+        <item>Teletextseite</item>
+        <item>Eingabemedium</item>
+        <item>Ausgabemedium</item>
+    </string-array>
+
+    <string name="addNewService_txtStateValue">Zustandswert:</string>
+    <string name="addNewService_rlmStateValueGroupName">Zustandswerte</string>
+
+    <string-array name="addNewService_spnStateValueChoices">
+        <item>Ein</item>
+        <item>Aus</item>
+        <item>Das Erste</item>
+        <item>ZDF</item>
+        <item>phoenix</item>
+        <item>ZDFneo</item>
+    </string-array>
+    
+    <!-- Dashboard Device -->
+    <string name="deviceOption_can_rename">Umbenennen</string>
+    <string name="deviceOption_can_change_room">Raum ändern</string>
+    <string name="deviceOption_can_change_vis">Anzeige ändern</string>
+    <string name="deviceOption_can_change_min_max">Idealwerte anpassen</string>
+    <string name="deviceOption_can_hide">Ausblenden</string> 
+
+    <!-- Device Details -->
+    <string name="deviceDetail_deviceName">Name</string>
+    <string name="deviceDetail_deviceLocation">Ort</string>
+    <string name="deviceDetail_deviceMaxValue">Maximalwert</string>
+    <string name="deviceDetail_deviceMinValue">Minimalwert</string>
+    <string name="deviceDetail_deviceIdealMin">Idealwert Minimum</string>
+    <string name="deviceDetail_deviceIdealMax">Idealwert Maximum</string>
+        
+    <string name="deviceDetail_activityName">Gerätesteuerung</string>
+    <string name="deviceDetail_deviceState">Gerätezustand</string>
+    <string name="deviceDetail_deviceSwitch">An/Aus</string>
+    
+    <!-- Dashboard -->
+    <string name="dashboard_filter_exceededBoundaryValues">Idealwerte Überschritten</string>
+    <string name="dashboard_filter_filter">Filter</string>
+    <string name="dashboard_filter">Anwenden</string>
+    <string name="dashboard_filter_remove">Entfernen</string>
+    <string name="dashboard_filter_cancel">Abbrechen</string>
+    
+    <string name="dashboard_options_title">"Optionen für "</string>
+    <string name="dashboard_options_change">Ändern</string>
+    <string name="dashboard_options_min_must_be_number">Minimum muss eine Zahl sein</string>
+    <string name="dashboard_options_max_must_be_number">Maximum muss eine Zahl sein</string>
+    <string name="dashboard_options_min_must_be_lower">Minimum muss kleiner als Maximum sein</string>
+    <string name="dashboard_options_enter_name">Bitte gibt einen neuen Namen an</string>
+    
+    <string name="dashboard_rename_of">"Umbenennen von "</string>
+    <string name="dashboard_ok">OK</string>    
+    <string name="dashboard_change_vis_of">"Ändere Anzeige von "</string>
+    <string name="dashboard_change_room_of">"Ändere Raum von "</string>
+    <string name="dashboard_type_in_room">"Bitte gib einen Raum an "</string>
+    <string name="dashboard_change_ideal_values_of">"Ändere Idealwerte von "</string>
+
+    <!-- Settings -->
+    <string name="settings_category_ui_title">Benutzerschnittstelle</string>
+    <string name="settings_ui_theme_title">Farbschema (Theme)</string>
+
+    <string-array name="settings_ui_theme_titles">
+        <item>Hell</item>
+        <item>Dunkel</item>
+    </string-array>
+    <string-array name="settings_ui_theme_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+
+    <string name="settings_ui_theme_hint">Das neue Farbschema wird wirksam, wenn Sie die Einstellungen verlassen.</string>
+    <string name="settings_ui_theme_hint_Children">Das neue Farbschema wird wirksam, wenn du die Einstellungen verlässt.</string>
+    <string name="settings_ui_colored_state_encoding_title">Farbige Sensorwerte</string>
+    <string name="settings_ui_colored_state_encoding_summary">Legt fest, ob kritische Sensorwerte farbig markiert werden (falls nicht, wird dies durch Zeichen kenntlich gemacht).</string>
+    <string name="settings_ui_vibrations_title">Vibrationen</string>
+    <string name="settings_ui_vibrations_summary">Legt fest, ob das Gerät beim Öffnen von Menüs oder beim Verschieben von Geräten vibriert.</string>
+    <string name="settings_ui_help_reminder_title">Hilfeerinnerung</string>
+    <string name="settings_ui_help_reminder_summary">Legt fest, ob in bestimmten zeitlichen Abständen eine Erinnerungsnachricht zur Hilfefunktion eingeblendet wird.</string>
+    <string name="settings_ui_assistant_based_navigation_title">Assistentenbasierte Navigation</string>
+    <string name="settings_ui_assistant_based_navigation_summary">Legt fest, ob die Navigation statt formular- eher assistentenbasiert ist. (Sind Reel-Menüs aktiv, ist die Navigation immer assistentenbasiert.)</string>
+    <string name="settings_category_tutorial_title">Einführung</string>
+    <string name="settings_tutorial_btnRepeatTutorial">Einführung wiederholen</string>
+    <string name="settings_category_devices_title">Geräte</string>
+    <string name="settings_devices_btnAddDevices">Geräte hinzufügen</string>
+    <string name="settings_category_dev_title">Entwicklereinstellungen</string>
+    <string name="settings_dev_btnAddNewService">Neuen Dienst hinzufügen</string>
+    <string name="settings_dev_btnReset">App zurücksetzen (Einstellungen und Kontextmodell)</string>
+    <string name="settings_dev_enable_mock_data_summery">Bestimmte Activitys werden mit Mockdaten gefüllt. Nützlich für kleine Demo´s. Nach der Änderung dieser Einstellung ist ein Neustart der App notwendig.</string>
+    <string name="settings_dev_enable_mock_data_title">Aktiviere Mockdaten</string>
+
+    <!-- All Apps -->
+
+    <string name="appTitle">All Apps</string>
+    <string name="button1">Active Apps</string>
+    <string name="button2">Installed Apps</string>
+    <string name="button3">App Repository</string>
+    <string name="title_activity_device_detail">DeviceDetailActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_process_dashboard">Process Manager</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    
+    <!-- TODO -->
+    
+    <string-array name="process_array">
+        <item>Prozess 1</item>
+        <item>Prozess 2</item>
+        <item>Prozess 3</item>
+        <item>Prozess 5</item>
+        <item>Prozess 6</item>
+        <item>Prozess 7</item>
+        <item>Prozess 8</item>
+        <item>Prozess 9</item>
+    </string-array>
+
+</resources>

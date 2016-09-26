@@ -1,0 +1,160 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/properties"
+        android:layout_width="320dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="-320dp"
+        android:animateLayoutChanges="true"
+        android:animationCache="true"
+        android:background="@color/clShapeBackgroundStartColorLight" >
+
+        <ImageButton
+            android:id="@+id/properties_close_button"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:src="@android:drawable/ic_menu_close_clear_cancel" />
+
+        <TextView
+            android:id="@+id/properties_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/properties_close_button"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/properties_close_button"
+            android:gravity="center"
+            android:text="Large Text"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/properties_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/portType"
+            android:layout_alignBottom="@+id/portType"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/portType"
+            android:gravity="right"
+            android:padding="10dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/item_detail_description_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/portType"
+            android:padding="10dp"
+            android:text="Description:"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/properties_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/item_detail_description_label"
+            android:layout_alignBottom="@+id/item_detail_description_label"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/item_detail_description_label"
+            android:gravity="right"
+            android:padding="10dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/TextView02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/properties_close_button"
+            android:padding="10dp"
+            android:text="Type:"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/properties_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/TextView02"
+            android:layout_alignBottom="@+id/TextView02"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/TextView02"
+            android:gravity="right"
+            android:padding="10dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/TextView03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/TextView02"
+            android:padding="10dp"
+            android:text="Resource:"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/properties_resource"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/TextView03"
+            android:layout_alignBottom="@+id/TextView03"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/TextView03"
+            android:gravity="right"
+            android:padding="10dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/portType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/TextView03"
+            android:padding="10dp"
+            android:text="ID:"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/TextView04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/item_detail_description_label"
+            android:padding="10dp"
+            android:text="Ports"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold" />
+
+        <ListView
+            android:id="@+id/properties_port_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/TextView04">
+        </ListView>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/sequenceViewContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/properties" >
+    </FrameLayout>
+
+</RelativeLayout>

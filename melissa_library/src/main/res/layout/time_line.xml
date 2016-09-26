@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+       android:id="@+id/wrapper"
+       android:layout_height="wrap_content"
+       android:layout_width="match_parent">
+
+    <RelativeLayout
+            android:orientation="horizontal"
+            android:id="@+id/layoutWrapper"
+            android:layout_height="365dp"
+            android:layout_width="match_parent" >
+
+        <RelativeLayout
+                android:orientation="horizontal"
+                android:id="@+id/layout"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:layout_above="@+id/labels">
+
+            <RelativeLayout
+                    android:id="@+id/layoutIdeal"
+                    android:layout_height="match_parent"
+                    android:layout_width="wrap_content" >
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="0"
+                        android:id="@+id/labelIdealEnd"
+                        android:layout_alignParentBottom="true"/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="0"
+                        android:id="@+id/labelIdealBegin"/>
+
+            </RelativeLayout>
+
+            <view class="de.tud.melissa.view.SingleBarView"
+                  android:id="@+id/ideal"
+                  android:layout_height="match_parent"
+                  android:layout_width="@dimen/content_padding"
+                  android:visibility="gone"
+                  android:layout_marginLeft="@dimen/content_padding_half"
+                  android:layout_marginRight="@dimen/content_padding_half"
+                  android:layout_toRightOf="@id/layoutIdeal"/>
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/chartLayout"
+                    android:layout_toRightOf="@id/ideal"
+                    android:layout_toLeftOf="@+id/labelValue">
+
+                <view class="de.tud.melissa.view.LineChartView"
+                      android:id="@+id/foreground"
+                      android:layout_height="match_parent"
+                      android:layout_width="match_parent"/>
+
+            </RelativeLayout>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="0"
+                    android:id="@+id/labelValue"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="@dimen/content_padding_half"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:id="@+id/labels"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:paddingTop="@dimen/content_padding_half"
+            android:layout_alignParentBottom="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="00:00:00"
+                android:id="@+id/label_time_oldest"
+                android:singleLine="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="00:00:00"
+                android:id="@+id/label_time_current"
+                android:singleLine="true"
+                android:layout_alignParentRight="true"/>
+
+         </RelativeLayout>
+
+    </RelativeLayout>
+
+</merge>

@@ -1,0 +1,9 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:enterFadeDuration="200"
+    android:exitFadeDuration="200">
+    <item android:state_enabled="true" android:state_selected="true" android:drawable="@drawable/card_focused"/>
+    <item android:state_enabled="true" android:state_focused="true" android:drawable="@drawable/card_focused"/>
+    <item android:state_enabled="true" android:state_pressed="true" android:drawable="@drawable/card_focused"/>
+    
+    <item android:drawable="@drawable/card_unfocused"/>
+</selector>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	
+    <TextView
+        android:id="@+id/HTtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginLeft="42dp"
+        android:layout_marginBottom="10dp"
+        android:text="Input Data"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+
+         <ListView
+	        android:id="@android:id/list"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="@+id/label">
+         
+         	</ListView>
+</LinearLayout>

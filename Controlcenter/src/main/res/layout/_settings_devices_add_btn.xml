@@ -1,0 +1,9 @@
+<Button xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/settings_btnAddDevices"
+	style="@style/btn"
+	android:layout_width="match_parent"
+	android:layout_gravity="center"
+	android:text="@string/settings_devices_btnAddDevices"
+	android:onClick="addDevicesOnClick">
+
+</Button>

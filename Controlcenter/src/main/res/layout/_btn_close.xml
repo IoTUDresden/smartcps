@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Button xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_alignParentBottom="true"
+	android:layout_centerHorizontal="true"
+	android:layout_marginBottom="@dimen/marginNormal"
+	style="@style/btn"
+	android:paddingLeft="@dimen/paddingHorizontalButtonClose"
+	android:paddingRight="@dimen/paddingHorizontalButtonClose"
+	android:text="@string/btnClose"
+	android:textSize="@dimen/tsNormal"/>

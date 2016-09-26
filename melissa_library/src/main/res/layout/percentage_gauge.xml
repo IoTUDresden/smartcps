@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/wrapper"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <view
+        android:id="@+id/background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        class="de.tud.melissa.view.GaugeView" />
+
+    <view
+        android:id="@+id/ideal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        class="de.tud.melissa.view.GaugeView" />
+
+    <view
+        android:id="@+id/foreground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        class="de.tud.melissa.view.GaugeView" />
+
+    <view
+        android:id="@+id/value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/foreground"
+        android:layout_alignParentBottom="false"
+        class="de.tud.melissa.view.AutoResizeTextView"
+        android:gravity="end|bottom"
+        android:textStyle="bold" />
+
+</merge>

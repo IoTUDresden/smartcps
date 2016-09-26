@@ -1,0 +1,114 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<style name="ThemeDark" parent="android:Theme.Holo">
+		<item name="android:actionBarStyle">@android:style/Widget.Holo.ActionBar.Solid</item>
+		<item name="android:textColor">#FFFFFF</item>
+		<item name="textColor">@color/clTextDark</item>
+		<item name="linkColor">@color/clLinkDark</item>
+		<item name="actionHelpDrawable">@drawable/action_help_dark</item>
+		<item name="actionSettingsDrawable">@drawable/action_settings_dark</item>
+		<item name="actionServerDrawable">@drawable/action_sort_dark</item>
+		<item name="actionFilterDrawable">@drawable/action_filter_devices_dark</item>
+		<item name="actionFloorDrawable">@drawable/action_floor_dark</item>
+		<item name="actionAppdashboardDrawable">@drawable/action_appdashboard_dark</item>
+		<item name="btnHomeControlAllDevicesDrawable">@drawable/home_control_all_devices_dark</item>
+		<item name="btnHomeControlFloorDrawable">@drawable/home_control_floor_dark</item>
+		<item name="deviceTVDrawable">@drawable/device_tv_dark</item>
+		<item name="deviceTemperatureSensorDrawable">@drawable/device_temperature_sensor_dark</item>
+		<item name="stateChannelDasErsteDrawable">@drawable/state_channel_das_erste_dark</item>
+		<item name="stateChannelZDFDrawable">@drawable/state_channel_zdf_dark</item>
+		<item name="statePowerDrawable">@drawable/state_power_dark</item>
+		<item name="stateVolumeDrawable">@drawable/state_volume_dark</item>
+		<item name="stateVolumeMuteDrawable">@drawable/state_volume_mute_dark</item>
+		<item name="reelMenuDrawable">@drawable/reel_menu_dark</item>
+		<item name="shapeBackground">@drawable/shape_dark</item>
+		<item name="shapeBackgroundLeft">@drawable/shape_drag_left_dark</item>
+		<item name="shapeBackgroundRight">@drawable/shape_drag_right_dark</item>
+		<item name="shapeHeaderColor">@color/clShapeHeaderDark</item>
+		<item name="breadcrumbsDividerColor">@color/clBreadcrumbsDividerDark</item>
+		
+		<item name="bordered_oval">@drawable/bordered_oval_dark</item>
+		
+		<item name="shapeSingleGrid">@drawable/shape_dashboard_single_grid_dark</item>
+		<item name="shapeSingleGridHeader">@drawable/shape_dashboard_single_grid_header_dark</item>
+		<item name="shapeSingleGridHeaderText">@color/clDashboardSingleGridHeaderTextDark</item>
+	</style>
+	
+	<style name="ThemeLight" parent="android:Theme.Holo.Light">
+		<item name="android:actionBarStyle">@android:style/Widget.Holo.Light.ActionBar.Solid</item>
+		<item name="android:textColor">#000000</item>
+		<item name="textColor">@color/clTextLight</item>
+		<item name="linkColor">@color/clLinkLight</item>
+		<item name="actionHelpDrawable">@drawable/action_help_dark</item>
+		<item name="actionSettingsDrawable">@drawable/action_settings_dark</item>
+		<item name="actionServerDrawable">@drawable/action_sort_light</item>
+		<item name="actionFloorDrawable">@drawable/action_floor_dark</item>
+		<item name="actionFilterDrawable">@drawable/action_filter_devices_dark</item>
+		<item name="actionAppdashboardDrawable">@drawable/action_appdashboard_light</item>
+        <item name="actionProcessdashboardDrawable">@drawable/action_appdashboard_dark</item>
+		<item name="btnHomeControlAllDevicesDrawable">@drawable/home_control_all_devices_light</item>
+		<item name="btnHomeControlFloorDrawable">@drawable/home_control_floor_light</item>
+		<item name="deviceTVDrawable">@drawable/device_tv_light</item>
+		<item name="deviceTemperatureSensorDrawable">@drawable/device_temperature_sensor_light</item>
+		<item name="stateChannelDasErsteDrawable">@drawable/state_channel_das_erste_light</item>
+		<item name="stateChannelZDFDrawable">@drawable/state_channel_zdf_light</item>
+		<item name="statePowerDrawable">@drawable/state_power_light</item>
+		<item name="stateVolumeDrawable">@drawable/state_volume_light</item>
+		<item name="stateVolumeMuteDrawable">@drawable/state_volume_mute_light</item>
+		<item name="reelMenuDrawable">@drawable/reel_menu_light</item>
+		<item name="shapeBackground">@drawable/shape_light</item>
+		<item name="shapeBackgroundLeft">@drawable/shape_drag_left_light</item>
+		<item name="shapeBackgroundRight">@drawable/shape_drag_right_light</item>
+		<item name="shapeHeaderColor">@color/clShapeHeaderLight</item>
+		<item name="breadcrumbsDividerColor">@color/clBreadcrumbsDividerLight</item>
+		
+		<item name="bordered_oval">@drawable/bordered_oval_light</item>
+		
+		<item name="shapeSingleGrid">@drawable/shape_dashboard_single_grid_light</item>
+		<item name="shapeSingleGridHeader">@drawable/shape_dashboard_single_grid_header_light</item>
+		<item name="shapeSingleGridHeaderText">@color/clDashboardSingleGridHeaderTextLight</item>
+		
+	</style>
+
+	<style name="btn">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:paddingBottom">@dimen/paddingVerticalButton</item>
+		<item name="android:paddingLeft">@dimen/paddingHorizontalButton</item>
+		<item name="android:paddingRight">@dimen/paddingHorizontalButton</item>
+		<item name="android:paddingTop">@dimen/paddingVerticalButton</item>
+	</style>
+
+	<style name="paddingNormalRound">
+		<item name="android:paddingBottom">@dimen/paddingNormal</item>
+		<item name="android:paddingLeft">@dimen/paddingNormal</item>
+		<item name="android:paddingRight">@dimen/paddingNormal</item>
+		<item name="android:paddingTop">@dimen/paddingNormal</item>
+	</style>
+	
+	<style name="typefaceBold">
+		<item name="android:textStyle">bold</item>
+	</style>
+    
+    <style 
+        name="CustomActionBarTheme"
+        parent="@android:style/Theme.DeviceDefault">
+        <item name="android:windowActionBarOverlay">true</item>
+    </style>
+    
+    <style name="dashboard_button">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>      
+        <item name="android:background">@drawable/buttonselector</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:drawablePadding">10dp</item> 
+    </style>
+    
+  <style name="dashboard_button_center" parent="@style/dashboard_button">
+        <item name="android:layout_width">wrap_content</item>        
+        <item name="android:layout_weight">0</item>  
+    </style>
+    
+
+</resources>

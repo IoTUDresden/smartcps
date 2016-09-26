@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/linearLayoutAge"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:layout_centerHorizontal="true"
+	android:layout_marginTop="@dimen/marginNormal"
+	android:gravity="center_horizontal"
+	android:orientation="vertical">
+
+	<TextView
+		android:id="@+id/tutEvaluation_txtAge"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:gravity="center_horizontal"
+		android:text="@string/tutEvaluation_txtAge"
+		android:textSize="@dimen/tsNormal"/>
+
+	<Spinner
+		android:id="@+id/tutEvaluation_spnAge"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"/>
+
+</LinearLayout>

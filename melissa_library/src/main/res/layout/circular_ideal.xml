@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+       android:id="@+id/wrapper"
+       android:layout_height="match_parent"
+       android:layout_width="match_parent" >
+
+    <RelativeLayout
+            android:id="@+id/circle"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent" >
+
+        <view class="de.tud.melissa.view.CircularSegmentView"
+              android:id="@+id/less"
+              android:layout_height="250dp"
+              android:layout_width="match_parent"/>
+
+        <view class="de.tud.melissa.view.CircularSegmentView"
+              android:id="@+id/ideal"
+              android:layout_height="250dp"
+              android:layout_width="match_parent"/>
+
+        <view class="de.tud.melissa.view.CircularSegmentView"
+              android:id="@+id/over"
+              android:layout_height="250dp"
+              android:layout_width="match_parent"/>
+    </RelativeLayout>
+
+    <TableLayout
+          android:id="@+id/labels"
+          android:layout_height="wrap_content"
+          android:layout_width="match_parent"
+          android:layout_below="@id/circle"
+          android:gravity="center_vertical|center_horizontal"
+          android:paddingTop="@dimen/content_padding">
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/content_padding_half"
+            android:gravity="center_vertical">
+
+            <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:id="@+id/label_less"
+                    android:background="@color/light_gray" />
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/value_less"
+                    android:textColor="@color/light_gray"
+                    android:paddingLeft="@dimen/content_padding_half"/>
+            </TableRow>
+
+        <TableRow
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:paddingBottom="@dimen/content_padding_half"
+                android:gravity="center_vertical">
+
+            <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:id="@+id/label_ideal"
+                    android:background="@color/light_gray" />
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/value_ideal"
+                    android:textColor="@color/light_gray"
+                    android:paddingLeft="@dimen/content_padding_half"/>
+        </TableRow>
+
+        <TableRow
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:gravity="center_vertical">
+
+            <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:id="@+id/label_over"
+                    android:background="@color/light_gray"
+                    android:paddingRight="@dimen/content_padding" />
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/value_over"
+                    android:textColor="@color/light_gray"
+                    android:paddingLeft="@dimen/content_padding_half"/>
+        </TableRow>
+
+
+
+
+
+    </TableLayout>
+
+</merge>

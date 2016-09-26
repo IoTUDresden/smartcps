@@ -1,0 +1,55 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent">
+
+<PreferenceCategory
+        android:title="@string/robot_settings_robot_section_title">
+        
+        <EditTextPreference
+            android:key="key_robot_port"
+            android:dialogTitle="Enter Rosbridge Port"
+            android:title="@string/robot_rosbridge_port_title"
+            android:defaultValue="9191"
+            android:summary="9191">
+        </EditTextPreference>
+                         
+       	<EditTextPreference
+            android:key="key_robot_publishing_delay"
+            android:dialogTitle="Enter delay between velocity commands"
+            android:title="@string/robot_sending_delay_title"
+            android:defaultValue="100"
+            android:summary="100">
+        </EditTextPreference>
+        
+	</PreferenceCategory>
+
+    
+    <PreferenceCategory
+        android:title="@string/robot_settings_video_section_title">
+       	                
+       	<EditTextPreference
+            android:key="key_video_port"
+            android:dialogTitle="Enter Videostream Port"
+            android:title="@string/robot_video_port_title"
+            android:defaultValue="8181"
+            android:summary="8181">
+        </EditTextPreference>
+        
+       	<EditTextPreference
+            android:key="key_video_topic"
+            android:dialogTitle="Enter ROS Image Topic"
+            android:title="@string/robot_video_topic_title"
+            android:defaultValue="/camera/image_raw"
+            android:summary="/camera/rgb/image_color">
+        </EditTextPreference>
+       	
+        <eu.vicci.ecosystem.standalone.controlcenter.android.util.ListPreferenceWithSummary
+            android:key="key_video_quality"
+	        android:summary="%s"        
+	        android:title="@string/robot_video_quality_title"
+	        android:entries="@array/video_quality_select"
+	        android:entryValues="@array/video_quality_values"
+	        android:defaultValue="50" />
+	</PreferenceCategory>
+
+</PreferenceScreen>

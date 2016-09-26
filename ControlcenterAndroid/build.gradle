@@ -1,0 +1,7 @@
+apply plugin: 'java'
+
+
+dependencies {
+    compile group: 'org.javatuples', name: 'javatuples', version: '1.2'
+    compile project(':SystemApp')
+}

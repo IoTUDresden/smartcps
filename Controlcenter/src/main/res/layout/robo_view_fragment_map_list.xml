@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/map_view_context"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/list_background_grey">
+	
+    <!-- Header for Context Menu -->
+    <RelativeLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:paddingTop="13dp"
+		android:paddingBottom="10dp"
+		android:background="@color/background_dark_grey">
+		    
+		    
+		   <ImageButton
+		        android:id="@+id/collapse_maps_button"
+		        android:layout_width="40dp"
+		        android:layout_height="40dp"
+				android:layout_marginLeft="20dp"
+		        android:src="@drawable/ic_collapse"
+		        android:background="@null"
+		        android:contentDescription="@string/item_list_collapse"
+		        android:scaleType="fitCenter"
+		        android:adjustViewBounds="true"/>
+		    
+		    <TextView
+		        android:text="@string/title_list_map_context"
+		        android:layout_width="wrap_content"
+		    	android:layout_height="40dp"
+		    	android:layout_marginLeft="20dp"
+				android:textSize="20sp"
+				android:gravity="center"
+				android:layout_toRightOf="@id/collapse_maps_button"
+				android:textColor="@color/text_bright">
+		    </TextView> 
+		    
+		    <ImageButton
+				android:id="@+id/add_map_button"   
+		        android:layout_width="40dp"
+		        android:layout_height="40dp"
+				android:layout_marginRight="10dp"
+		        android:src="@drawable/ic_add_map"
+		        android:background="@null"
+		        android:contentDescription="@string/add_map_button"
+		        android:scaleType="fitCenter"
+		        android:adjustViewBounds="true"
+		        android:layout_alignParentRight="true"/>
+	
+	</RelativeLayout>
+         
+    <!-- The List of available Maps -->
+    <LinearLayout
+        android:id="@+id/map_list"
+	    android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:visibility="visible"
+    	android:orientation="vertical">
+		    
+	</LinearLayout>
+	
+</LinearLayout> 

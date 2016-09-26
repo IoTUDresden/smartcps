@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/checkedEditTextView"
+    android:layout_width="fill_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:paddingBottom="10dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="10dp" >
+
+    <EditText
+        android:id="@+id/editText0"
+        android:layout_alignParentLeft="true"
+        android:inputType="text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lines="1"
+        android:ems="30"
+        android:focusable="true"
+        android:focusableInTouchMode="true"/>
+
+    <RadioButton
+        android:id="@+id/radioButton0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:clickable="false"
+        android:longClickable="false" />
+
+</RelativeLayout>

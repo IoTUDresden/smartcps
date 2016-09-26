@@ -1,0 +1,5 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<Preference android:key="fake" android:layout="@layout/_settings_tutorial_btn"></Preference>
+
+</PreferenceScreen>

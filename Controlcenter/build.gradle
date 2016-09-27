@@ -16,6 +16,16 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
         }
     }
+	
+	lintOptions {
+		checkReleaseBuilds false
+		// Or, if you prefer, you can continue to check for errors in release builds,
+		// but continue the build even when errors are found:
+		abortOnError false
+     }
+
+	
+	
     // TODO clean this up. Better dependency organization needed
     packagingOptions {
         // excluding files, which causes duplicate exception and are not needed

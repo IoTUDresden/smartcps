@@ -10,10 +10,14 @@ android {
 		exclude 'META-INF/ECLIPSE_.RSA'
 		exclude 'META-INF/ECLIPSE_.SF'
 		exclude 'about.html'
+		exclude 'about.ini'
+		exclude 'about.mappings'
+		exclude 'about.properties'
+		exclude 'modeling32.png'
 		exclude 'plugin.properties'
 		exclude 'plugin.xml'
-		exclude 'about.properties'
     }
+	
     defaultConfig {
         minSdkVersion 16
         targetSdkVersion 16

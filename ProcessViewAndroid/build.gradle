@@ -7,6 +7,12 @@ android {
         exclude 'META-INF/LICENSE'
         exclude 'META-INF/ASL2.0'
         exclude 'META-INF/eclipse.inf'
+		exclude 'META-INF/ECLIPSE_.RSA'
+		exclude 'META-INF/ECLIPSE_.SF'
+		exclude 'about.html'
+		exclude 'plugin.properties'
+		exclude 'plugin.xml'
+		exclude 'about.properties'
     }
     defaultConfig {
         minSdkVersion 16

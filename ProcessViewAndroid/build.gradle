@@ -48,4 +48,6 @@ dependencies {
     compile 'com.fasterxml.jackson.core:jackson-databind:2.4.4'
 
     provided files('libs/process.model-20092016.jar')
+    provided files('libs/process.core-20092016.jar')
+    provided files('libs/process.util-20092016.jar')
 }

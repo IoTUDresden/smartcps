@@ -16,7 +16,8 @@ import ws.wamp.jawampa.PubSubData;
 
 public class StateChangeMessageHandler extends AbstractPubSubDataSubscriber {
 	private static StateChangeMessageHandler instance = null;
-	private List<IStateChangeMessage> events = new ArrayList<IStateChangeMessage>();
+    //must be an arrayList, so we can easily get the last message for a given process
+	private List<IStateChangeMessage> events = new ArrayList<>();
 	private IStateChangeMessage payload;
 	
 	private StateChangeMessageHandler() {	}
@@ -64,6 +65,28 @@ public class StateChangeMessageHandler extends AbstractPubSubDataSubscriber {
 		return result;
 	}
 
+
+    /**
+     * Gets the last received message for the given process.
+     * @param processInstanceId the instance id of the (executing) root process
+     * @param processId the processId of the process within the root process or the root process self
+     * @return null if no message was found
+     */
+    public IStateChangeMessage getLastStateMessageForProcess(String processInstanceId, String processId){
+        //array lists backwards
+        for (int i = events.size() - 1; i > -1 ; i--) {
+            IStateChangeMessage message = events.get(i);
+            if(message.getProcessInstanceId().equals(processInstanceId) && message.getProcessId().equals(processInstanceId))
+                return message;
+        }
+        return  null;
+    }
+
+	/**
+	 * Gets all received messages for the given processInstanceId (root process)
+	 * @param processInstanceID
+	 * @return
+     */
 	public List<IStateChangeMessage> getMessages(String processInstanceID) {
 		ArrayList<IStateChangeMessage> result = new ArrayList<IStateChangeMessage>();
 		ArrayList<String> messageIDs = new ArrayList<String>();

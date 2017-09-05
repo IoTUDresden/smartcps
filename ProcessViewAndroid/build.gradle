@@ -4,11 +4,8 @@ android {
     compileSdkVersion 25
     buildToolsVersion "25.0.0"
     packagingOptions {
-        exclude 'META-INF/LICENSE'
-        exclude 'META-INF/ASL2.0'
-        exclude 'META-INF/eclipse.inf'
-		exclude 'META-INF/ECLIPSE_.RSA'
-		exclude 'META-INF/ECLIPSE_.SF'
+        exclude 'META-INF/**'
+        exclude 'maven_libs/**'
 		exclude 'about.html'
 		exclude 'about.ini'
 		exclude 'about.mappings'

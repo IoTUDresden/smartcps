@@ -1,12 +1,12 @@
 package eu.vicci.process.kpseus.connect.handlers;
 
-import java.util.List;
-
 import com.fasterxml.jackson.core.type.TypeReference;
 
+import java.util.List;
+
 import eu.vicci.process.engine.core.IProcessInfo;
+import eu.vicci.process.engine.core.ReplyState;
 import eu.vicci.process.model.util.ProcessInfo;
-import eu.vicci.process.model.util.configuration.ReplyState;
 import ws.wamp.jawampa.Reply;
 
 public class ProcessListHandler extends AbstractClientHandler {

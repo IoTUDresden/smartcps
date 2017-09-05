@@ -17,11 +17,11 @@ public class ProcessMock {
 	 */
 	public static void addProcessMocks(){
 		ProcessInstanceInfo proc1 = new ProcessInstanceInfo(
-				"inst01", "id01", "Waschmaschine", "CleaningType", "Waschmaschine im Keller", 
-				State.ACTIVE);
+				"process1234_instance_1", 1, State.ACTIVE , "process1234", "Waschmaschine im Keller", "CleaningType", "Die Wäsche wird gewaschen");
+
 		ProcessInstanceInfo proc2 = new ProcessInstanceInfo(
-				"inst02", "id02", "Kaffeemaschine", "KitchenType", "Kaffeautomat in Küche", 
-				State.EXECUTING);
+		"process4321_instance_1", 1, State.EXECUTING , "process4321", "Kaffeemaschine", "KitchenType", "Es wird Kaffee gekocht.");
+
 		DashboardContentManager.getInstance().addDashboardDevice(new Process(proc1));
 		DashboardContentManager.getInstance().addDashboardDevice(new Process(proc2));
 	}

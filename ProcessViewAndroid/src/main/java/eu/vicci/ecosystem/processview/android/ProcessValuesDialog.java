@@ -18,12 +18,13 @@ import eu.vicci.process.model.util.messages.core.IStateChangeMessage;
 public class ProcessValuesDialog extends DialogFragment {
     public static final String ARG_MESSAGE = "message";
 
-    private ProcessValuesListAdapter adapter = new ProcessValuesListAdapter();
+    private ProcessValuesListAdapter adapter;
     private IStateChangeMessage message;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        //FIXME wont work
         message = (IStateChangeMessage)getArguments().get(ARG_MESSAGE);
     }
 
@@ -31,6 +32,7 @@ public class ProcessValuesDialog extends DialogFragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         LinearLayout view = new LinearLayout(getActivity());
         ListView list = new ListView(getActivity());
+        adapter = new ProcessValuesListAdapter(getActivity());
         adapter.fillWith(message);
         list.setAdapter(adapter);
         view.addView(list);

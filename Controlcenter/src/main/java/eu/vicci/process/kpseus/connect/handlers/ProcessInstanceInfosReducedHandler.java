@@ -2,7 +2,7 @@ package eu.vicci.process.kpseus.connect.handlers;
 
 import java.util.Map;
 
-import eu.vicci.process.model.util.configuration.ReplyState;
+import eu.vicci.process.engine.core.ReplyState;
 import ws.wamp.jawampa.Reply;
 
 public class ProcessInstanceInfosReducedHandler extends AbstractClientHandler {

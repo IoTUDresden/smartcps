@@ -44,7 +44,7 @@ public class StateChangeMessageHandler extends AbstractPubSubDataSubscriber {
 		String result = "";
 		long latest = 0;
 		for (IStateChangeMessage event : events) {
-			if (event.getTimeStamp() < latest || (messageID!=null && !messageID.equals(event.getMessageId())))
+			if (event.getTimestamp() < latest || (messageID!=null && !messageID.equals(event.getMessageId())))
 				continue;
 			Map<String, IJSONDataPortInstance> ports = new HashMap<String, IJSONDataPortInstance>();
 
@@ -57,7 +57,7 @@ public class StateChangeMessageHandler extends AbstractPubSubDataSubscriber {
 					IJSONTypeInstance typeInstance = ports.get(key).getDataTypeInstance();
 					if (typeInstance != null && typeInstance.getValueString().length() > 0) {
 						result = typeInstance.getValueString();
-						latest = event.getTimeStamp();
+						latest = event.getTimestamp();
 					}
 				}
 			}

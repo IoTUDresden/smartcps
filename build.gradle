@@ -15,7 +15,7 @@ allprojects {
         jcenter()
 
         maven { url "https://maven.google.com" }
-		maven {	url 'https://andiikaa.github.io/proteus/repo/maven/snapshot' }
+		maven {	url 'https://IoTUDresden.github.io/proteus-repo/maven/snapshot' }
         maven { url 'https://iotudresden.github.io/DROiTAPI/repo/' }
     }
 

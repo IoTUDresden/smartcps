@@ -197,7 +197,7 @@ public class HumanTaskChooserListAdapter extends BaseAdapter
 		case SORT_BY_NAME:
 			return request.getName().charAt(0);
 		case SORT_BY_DATE:
-			return request.getTimeStamp();
+			return request.getTimestamp();
 		case SORT_BY_TYPE:
 			return request.getHumanTaskType().ordinal();
 		default:
@@ -217,7 +217,7 @@ public class HumanTaskChooserListAdapter extends BaseAdapter
 			headerName = req.getHumanTaskType().toString();
 			break;
 		case SORT_BY_DATE:
-			Date date = new Date(req.getTimeStamp());
+			Date date = new Date(req.getTimestamp());
 			SimpleDateFormat sDateFormat = new SimpleDateFormat("d MMM yyyy - HH:mm:ss", Locale.UK);
 			String d = sDateFormat.format(date);
 			headerName = String.valueOf(d);

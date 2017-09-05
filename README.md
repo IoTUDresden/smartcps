@@ -1,6 +1,6 @@
 # smartcps
 
-[![travis status image](https://travis-ci.org/IoTUDresden/smartcps.svg?branch=master)]((https://travis-ci.org/IoTUDresden/smartcps))
+[![travis status image](https://travis-ci.org/IoTUDresden/smartcps.svg?branch=master)](https://travis-ci.org/IoTUDresden/smartcps)
 
 See the following publication for more detail:
 

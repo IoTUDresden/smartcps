@@ -3,9 +3,6 @@ apply plugin: 'com.android.library'
 android {
     compileSdkVersion 25
     buildToolsVersion "25.0.0"
-    packagingOptions {
-        exclude 'ros/maps.INF.yaml'
-    }
     defaultConfig {
         minSdkVersion 9
         targetSdkVersion 25
@@ -26,6 +23,11 @@ android {
         // Or, if you prefer, you can continue to check for errors in release builds,
         // but continue the build even when errors are found:
         abortOnError false
+    }
+
+    packagingOptions {
+        exclude 'META-INF/**'
+        exclude 'ros/maps.INF.yaml'
     }
 
     productFlavors {

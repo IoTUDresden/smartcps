@@ -285,7 +285,7 @@ public class ProcessEngineClient {
 			ports = null;
 		}
 
-		ProcessStartRequest input = new ProcessStartRequest(sih.getProcessInstanceId(), processId, ports, false);
+		ProcessStartRequest input = new ProcessStartRequest(sih.getProcessInstanceId(), ports, false);
 		wampClient.call(RpcId.START_INSTANCE, input).subscribe(sih);
 	}
 

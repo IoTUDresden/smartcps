@@ -11,7 +11,7 @@ import com.fasterxml.jackson.databind.JavaType;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-import eu.vicci.process.model.util.configuration.ReplyState;
+import eu.vicci.process.engine.core.ReplyState;
 import rx.Subscriber;
 import ws.wamp.jawampa.Reply;
 

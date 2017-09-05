@@ -1,8 +1,8 @@
 package eu.vicci.process.kpseus.connect.handlers;
 
+import eu.vicci.process.engine.core.ReplyState;
 import eu.vicci.process.model.sofiainstance.ProcessInstance;
 import eu.vicci.process.model.sofiainstance.SofiaInstanceFactory;
-import eu.vicci.process.model.util.configuration.ReplyState;
 import eu.vicci.process.model.util.serialization.jsonprocessstepinstances.JSONProcessStepInstance;
 import ws.wamp.jawampa.Reply;
 

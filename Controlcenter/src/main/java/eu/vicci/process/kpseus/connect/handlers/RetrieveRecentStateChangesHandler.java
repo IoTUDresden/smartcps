@@ -2,8 +2,8 @@ package eu.vicci.process.kpseus.connect.handlers;
 
 import java.util.List;
 
+import eu.vicci.process.engine.core.ReplyState;
 import eu.vicci.process.kpseus.connect.subscribers.StateChangeMessageHandler;
-import eu.vicci.process.model.util.configuration.ReplyState;
 import eu.vicci.process.model.util.messages.StateChangeMessage;
 import eu.vicci.process.model.util.messages.core.IStateChangeMessage;
 import ws.wamp.jawampa.Reply;

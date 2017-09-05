@@ -1,14 +1,14 @@
 package eu.vicci.process.kpseus.connect.handlers;
 
-import java.io.IOException;
-import java.io.StringReader;
-
 import org.eclipse.emf.ecore.xmi.XMLResource;
 import org.eclipse.emf.ecore.xmi.impl.XMLResourceImpl;
 import org.xml.sax.InputSource;
 
+import java.io.IOException;
+import java.io.StringReader;
+
+import eu.vicci.process.engine.core.ReplyState;
 import eu.vicci.process.model.sofia.Process;
-import eu.vicci.process.model.util.configuration.ReplyState;
 import ws.wamp.jawampa.Reply;
 
 public class ProcessInfosHandler extends AbstractClientHandler {

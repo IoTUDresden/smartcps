@@ -31,4 +31,14 @@ public class ProcessInstanceKPImpl extends ProcessStepInstanceKPImpl implements
 		return SofiaInstancePackage.Literals.PROCESS_INSTANCE;
 	}
 
+	@Override
+	public String getRunningForInstanceId() {
+		return null;
+	}
+
+	@Override
+	public void setRunningForInstanceId(String s) {
+
+	}
+
 }

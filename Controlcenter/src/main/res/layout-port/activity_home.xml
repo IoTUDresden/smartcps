@@ -16,7 +16,7 @@
 		android:text="@string/home_txtActiveDevices"
 		android:textSize="@dimen/tsNormal"/>
     
-	<eu.vicci.ecosystem.standalone.controlcenter.android.reelmenu.LockableScrollView
+	<ScrollView
 		android:id="@+id/lockableScrollViewShapes"
 		android:layout_width="match_parent"
 		android:layout_height="match_parent"
@@ -112,6 +112,6 @@
 
         </LinearLayout>
     </LinearLayout>
-	</eu.vicci.ecosystem.standalone.controlcenter.android.reelmenu.LockableScrollView>
+	</ScrollView>
 
 </RelativeLayout>

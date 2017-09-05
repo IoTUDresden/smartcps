@@ -1,8 +1,8 @@
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 18
-    buildToolsVersion "24.0.2"
+    compileSdkVersion 25
+    buildToolsVersion "25.0.0"
     packagingOptions {
         exclude 'META-INF/LICENSE'
         exclude 'META-INF/ASL2.0'
@@ -20,7 +20,7 @@ android {
 	
     defaultConfig {
         minSdkVersion 16
-        targetSdkVersion 16
+        targetSdkVersion 25
     }
     buildTypes {
         release {
@@ -32,13 +32,24 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_7
         targetCompatibility JavaVersion.VERSION_1_7
     }
-    productFlavors {
+
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
     }
 }
 
 
 dependencies {
-    provided files('libs/android-support-v4.jar')
+    def withoutDeps = {
+        exclude group: 'org.hibernate', module: 'hibernate-core'
+        exclude group: 'xmlpull', module: 'xmlpull'
+        exclude group: 'org.java-websocket', module: 'java-websocket'
+        exclude group: 'org.java-websocket', module: 'Java-WebSocket'
+    }
+
     compile 'org.eclipse.emf:org.eclipse.emf.ecore:2.8.3.v20130125-0546'
     compile 'org.eclipse.emf:org.eclipse.emf.common:2.8.0.v20130125-0546'
     compile 'org.eclipse.emf:org.eclipse.emf.ecore.xmi:2.8.0-v20120911-0500'
@@ -47,5 +58,8 @@ dependencies {
     compile 'com.fasterxml.jackson.core:jackson-annotations:2.4.0'
     compile 'com.fasterxml.jackson.core:jackson-databind:2.4.4'
 
-    provided files('libs/process.model-20092016.jar')
+    compile 'eu.vicci.proteus.bundles.model:eu.vicci.process.model:1.0.0-SNAPSHOT', withoutDeps
+    compile 'eu.vicci.proteus.bundles.model:eu.vicci.process.core:1.0.0-SNAPSHOT', withoutDeps
+    compile 'eu.vicci.proteus.bundles.model:eu.vicci.process.model.util:1.0.0-SNAPSHOT', withoutDeps
+
 }

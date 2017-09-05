@@ -49,8 +49,8 @@ public enum HumanTaskChooserSortType {
 			return new Comparator<IHumanTaskMessage>() {
 				@Override
 				public int compare(IHumanTaskMessage lhs, IHumanTaskMessage rhs) {
-					Date lhsDate = new Date(lhs.getTimeStamp());
-					Date rhsDate = new Date(rhs.getTimeStamp());;
+					Date lhsDate = new Date(lhs.getTimestamp());
+					Date rhsDate = new Date(rhs.getTimestamp());;
 					return lhsDate.compareTo(rhsDate);
 				}
 			};

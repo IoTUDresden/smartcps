@@ -116,6 +116,13 @@ public class ProcessViewActivity extends SmartCPSActivity implements HandlerFini
 	}
 	
 	private void showProcessDialog(final String id){
+		if(!isInstance)
+			return; //TODO something from interest if this is not an instance?
+
+		IStateChangeMessage message = StateChangeMessageHandler.getInstance().getLastStateMessageForProcess(instanceId, id);
+		if(message == null)
+			return; //TODO info message or something
+
 		AlertDialog.Builder builder = new AlertDialog.Builder(this);
 		builder.setTitle("Callback")
 		.setMessage("Example for process clicked dialog.\nTODO this should show the current values for this process.\nChange the state of: ''" + id == null ? "null" : id)

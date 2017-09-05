@@ -31,7 +31,7 @@ public class HistoryListAdapter extends ArrayAdapter {
 
 			@Override
 			public int compare(IStateChangeMessage lhs, IStateChangeMessage rhs) {
-				int diff = (int) (lhs.getTimeStamp()-rhs.getTimeStamp());
+				int diff = (int) (lhs.getTimestamp()-rhs.getTimestamp());
 				
 				return diff==0?diff:diff/Math.abs(diff);
 			}
@@ -68,7 +68,7 @@ public class HistoryListAdapter extends ArrayAdapter {
 		TextView status = (TextView) view.findViewById(R.id.process_instance_history_status);
 		TextView time = (TextView) view.findViewById(R.id.process_instance_history_time);
 		status.setText(message.getState().getLiteral());
-		Date timeStamp = new Date(message.getTimeStamp());
+		Date timeStamp = new Date(message.getTimestamp());
 		String day = timeStamp.getDate()+"";
 		
 		String month = new DateFormatSymbols().getMonths()[timeStamp.getMonth()];

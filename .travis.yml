@@ -12,7 +12,7 @@ deploy:
   api_key:
     secure: CLrWpdll/c+jYmkwjYBK3NrT67wfgRtqNiubZKFaxaW08uLDo0A962dTePVxFdb/yS5k1HgTFrJw6PdUDXw3qsV/R8UfgBqEmhhOgWCICJV1cy/8EX8b9Uq4liWzYNvJcwy8/8o0IJCOxnQ8q+CsiY6RvAbgQyhoQdg1ZbzTpnMd3pODW+2YJxT+p5jbiOA+ds3GkDGowJQ0FU0BnlyTx/tOlUplUdCCaHcS9J9YNlCzLnH18IZPOWyreFaCHO8wG2WGvRhRBwfU8BY6d45sVc8r0Vl2+k3YE+lWoJrB87zCM8JOGnyDS9lNjJvoutF9/1e7fKFoSyLF2/9Y7hfCn1I+SZ83Hms/oytLIYYrGZvN2M97/sxQ+SQHFfDMyC29r2SJa0TYAoP+plep3mYPDrfR90w+LUgoN+YR9XN9XsA+OT8pa4hWPTvpvGnQcnMWnkQbGMkhoBhVb3dwOfXoutDbR0wyXKI/WjDnWPJGUaHQvPQT4ckz5ztyOJ1hWr4Fu9wDxD1sRDZmBLwgggFMosd/t83thykZlb/hCQd9qeYeF89hGgYIiYuK/C3LybvImEqhooO5ilozRke9KBcimPskClFOA4AqwXYaMqN3uoKel1EH4fy4EQ6zPHNOtbFum5KZe+V+ViAQNzVZ17TyIJBGjerPboE7QH4P9ZzuVCE=
   file: Controlcenter/build/outputs/apk/Controlcenter-debug.apk
-  overwrite: true
   skip_cleanup: true
+  overwrite: true
   on:
     repo: IoTUDresden/smartcps
